@@ -382,7 +382,7 @@ public class BookCollectionShadow extends AbstractBookCollection implements Serv
 			return null;
 		}
 	}
-	
+
 	@Override
 	public synchronized boolean saveCover(Book book, String url) {
 		if (myInterface == null) {

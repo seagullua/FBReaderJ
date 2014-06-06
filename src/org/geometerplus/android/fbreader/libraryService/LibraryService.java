@@ -264,12 +264,12 @@ public class LibraryService extends Service {
 		public void markHyperlinkAsVisited(String book, String linkId) {
 			myCollection.markHyperlinkAsVisited(SerializerUtil.deserializeBook(book), linkId);
 		}
-		
+
 		@Override
 		public Bitmap getCover(String book) {
 			return myCollection.getCover(SerializerUtil.deserializeBook(book));
 		}
-		
+
 		@Override
 		public boolean saveCover(String book, String url) {
 			return myCollection.saveCover(SerializerUtil.deserializeBook(book), url);

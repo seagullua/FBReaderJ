@@ -51,7 +51,7 @@ public abstract class ZLLoadableImage extends ZLSingleImage {
 	public abstract void synchronize();
 	public abstract void synchronizeFast();
 	public abstract String getId();
-	
+
 	@Override
 	public Bitmap getBitmap() {
 		if (!isSynchronized()) {
@@ -59,7 +59,7 @@ public abstract class ZLLoadableImage extends ZLSingleImage {
 		}
 		return super.getBitmap();
 	}
-	
+
 	@Override
 	public boolean saveToFile(String url) {
 		if (!isSynchronized()) {
