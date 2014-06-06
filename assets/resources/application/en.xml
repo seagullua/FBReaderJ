@@ -461,6 +461,9 @@
 				<node name="Regular Paragraph" value="Regular Paragraph">
 					<node name="summary" value=""/>
 				</node>
+				<node name="xhtml-tag-p" value="ePub paragraph">
+					<node name="summary" value="&lt;p&gt; XHTML tag content"/>
+				</node>
 				<node name="Title" value="Title">
 					<node name="summary" value=""/>
 				</node>
@@ -572,6 +575,10 @@
 			<node name="textAlignment" value="Text alignment">
 				<node name="summaryOn" value="Apply text alignment defined in CSS"/>
 				<node name="summaryOff" value="Ignore text alignment defined in CSS"/>
+			</node>
+			<node name="margins" value="Margins">
+				<node name="summaryOn" value="Apply margins defined in CSS"/>
+				<node name="summaryOff" value="Ignore margins defined in CSS"/>
 			</node>
 		</node>
 		<node name="colors" value="Colors &amp; wallpapers">
