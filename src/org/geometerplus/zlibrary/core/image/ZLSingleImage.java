@@ -55,12 +55,11 @@ public abstract class ZLSingleImage implements ZLImage {
 		if (inputStream == null) {
 			return false;
 		}
+
 		OutputStream outputStream = null;
 		final File file = new File(url);
-
 		final File parent = file.getParentFile();
 		parent.mkdirs();
-
 		try {
 			outputStream = new FileOutputStream(file);
 			int read = 0;
