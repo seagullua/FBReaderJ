@@ -22,14 +22,16 @@ package org.geometerplus.fbreader.book;
 import java.io.File;
 import java.util.*;
 
+import android.graphics.Bitmap;
+
 import org.geometerplus.zlibrary.core.filesystem.ZLFile;
 import org.geometerplus.zlibrary.core.filesystem.ZLPhysicalFile;
 import org.geometerplus.zlibrary.core.image.ZLImage;
+
 import org.geometerplus.zlibrary.text.view.ZLTextPosition;
+
 import org.geometerplus.fbreader.bookmodel.BookReadingException;
 import org.geometerplus.fbreader.formats.*;
-
-import android.graphics.Bitmap;
 
 public class BookCollection extends AbstractBookCollection {
 	private final BooksDatabase myDatabase;
@@ -654,9 +656,9 @@ public class BookCollection extends AbstractBookCollection {
 		if (image == null) {
 			return false;
 		}
+
 		return image.saveToFile(url);
 	}
-
 
 	public List<Bookmark> bookmarks(BookmarkQuery query) {
 		return myDatabase.loadBookmarks(query);

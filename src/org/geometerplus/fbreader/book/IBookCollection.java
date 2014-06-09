@@ -21,10 +21,11 @@ package org.geometerplus.fbreader.book;
 
 import java.util.List;
 
-import org.geometerplus.zlibrary.core.filesystem.ZLFile;
-import org.geometerplus.zlibrary.text.view.ZLTextPosition;
-
 import android.graphics.Bitmap;
+
+import org.geometerplus.zlibrary.core.filesystem.ZLFile;
+
+import org.geometerplus.zlibrary.text.view.ZLTextPosition;
 
 public interface IBookCollection {
 	public enum Status {
