@@ -19,8 +19,11 @@
 
 package org.geometerplus.fbreader.book;
 
+import java.io.File;
+import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.io.IOException;
+import java.io.OutputStream;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Formatter;
@@ -28,8 +31,12 @@ import java.util.Locale;
 
 import org.geometerplus.zlibrary.core.filesystem.*;
 import org.geometerplus.zlibrary.core.image.ZLImage;
+import org.geometerplus.zlibrary.ui.android.library.ZLAndroidApplication;
 
 import org.geometerplus.fbreader.bookmodel.BookReadingException;
+
+import android.content.Context;
+import android.content.res.AssetManager;
 
 public abstract class BookUtil {
 	public static ZLImage getCover(Book book) {
@@ -44,24 +51,56 @@ public abstract class BookUtil {
 		}
 	}
 
-	public static ZLResourceFile getHelpFile() {
-		final Locale locale = Locale.getDefault();
+	private static boolean copyAsset(AssetManager assetManager,
+            String fromAssetPath, String toPath) {
+        InputStream in = null;
+        OutputStream out = null;
+        try {
+          in = assetManager.open(fromAssetPath);
+          new File(toPath).createNewFile();
+          out = new FileOutputStream(toPath);
+          copyFile(in, out);
+          in.close();
+          in = null;
+          out.flush();
+          out.close();
+          out = null;
+          return true;
+        } catch(Exception e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
 
-//		ZLResourceFile file = ZLResourceFile.createResourceFile(
-//			"data/help/MiniHelp." + locale.getLanguage() + "_" + locale.getCountry() + ".fb2"
-//		);
-//		if (file.exists()) {
-//			return file;
-//		}
-//
-//		file = ZLResourceFile.createResourceFile(
-//			"data/help/MiniHelp." + locale.getLanguage() + ".fb2"
-//		);
-//		if (file.exists()) {
-//			return file;
-//		}
-
-		return ZLResourceFile.createResourceFile("data/book.epub");
+    private static void copyFile(InputStream in, OutputStream out) throws IOException {
+        byte[] buffer = new byte[1024];
+        int read;
+        while((read = in.read(buffer)) != -1){
+          out.write(buffer, 0, read);
+        }
+    }
+	
+	public static ZLFile getHelpFile() {
+		Context context = ZLAndroidApplication.context;
+		
+		String asset_name = "data/book.epub";
+		if(context != null) 
+		{
+			String data_path = "/data/data/" + context.getPackageName(); 
+			File folder = new File(data_path);
+			boolean success = true;
+			if (!folder.exists()) {
+			    success = folder.mkdir();
+			}
+			if (success) {
+				String full_path = data_path+"/book.epub";
+				if(copyAsset(context.getAssets(), asset_name, full_path)) {
+					return ZLFile.createFileByPath(full_path);
+				}
+			}
+			
+		}
+		return ZLResourceFile.createResourceFile(asset_name);
 	}
 
 	public static boolean canRemoveBookFile(Book book) {
