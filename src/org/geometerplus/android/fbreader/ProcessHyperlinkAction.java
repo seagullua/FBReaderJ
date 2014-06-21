@@ -29,8 +29,6 @@ import org.geometerplus.fbreader.fbreader.FBReaderApp;
 import org.geometerplus.fbreader.bookmodel.FBHyperlinkType;
 import org.geometerplus.fbreader.network.NetworkLibrary;
 
-import org.geometerplus.android.fbreader.network.BookDownloader;
-import org.geometerplus.android.fbreader.network.BookDownloaderService;
 import org.geometerplus.android.fbreader.image.ImageViewActivity;
 
 class ProcessHyperlinkAction extends FBAndroidAction {
@@ -92,13 +90,8 @@ class ProcessHyperlinkAction extends FBAndroidAction {
 	private void openInBrowser(final String url) {
 		final Intent intent = new Intent(Intent.ACTION_VIEW);
 		final boolean externalUrl;
-		if (BookDownloader.acceptsUri(Uri.parse(url))) {
-			intent.setClass(BaseActivity, BookDownloader.class);
-			intent.putExtra(BookDownloaderService.SHOW_NOTIFICATIONS_KEY, BookDownloaderService.Notifications.ALL);
-			externalUrl = false;
-		} else {
-			externalUrl = true;
-		}
+		
+		externalUrl = true;
 		final NetworkLibrary nLibrary = NetworkLibrary.Instance();
 		new Thread(new Runnable() {
 			public void run() {
