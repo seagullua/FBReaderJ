@@ -37,6 +37,7 @@ import org.geometerplus.fbreader.bookmodel.BookReadingException;
 
 import android.content.Context;
 import android.content.res.AssetManager;
+import android.util.Log;
 
 public abstract class BookUtil {
 	public static ZLImage getCover(Book book) {
@@ -86,19 +87,23 @@ public abstract class BookUtil {
 		String asset_name = "data/book.epub";
 		if(context != null) 
 		{
-			String data_path = "/data/data/" + context.getPackageName(); 
-			File folder = new File(data_path);
-			boolean success = true;
-			if (!folder.exists()) {
-			    success = folder.mkdir();
-			}
-			if (success) {
-				String full_path = data_path+"/book.epub";
-				if(copyAsset(context.getAssets(), asset_name, full_path)) {
-					return ZLFile.createFileByPath(full_path);
+			String data_path = "/data/data/" + context.getApplicationContext().getPackageName(); 
+			String full_path = data_path+"/book.epub";
+			File file = new File(full_path);
+		    if(!file.exists())
+		    {
+		    	Log.d("DEFAULT", "Copy book");
+				File folder = new File(data_path);
+				boolean success = true;
+				if (!folder.exists()) {
+				    success = folder.mkdir();
 				}
-			}
-			
+				if (success) {
+					if(copyAsset(context.getAssets(), asset_name, full_path)) {
+						return ZLFile.createFileByPath(full_path);
+					}
+				}
+		    }
 		}
 		return ZLResourceFile.createResourceFile(asset_name);
 	}
