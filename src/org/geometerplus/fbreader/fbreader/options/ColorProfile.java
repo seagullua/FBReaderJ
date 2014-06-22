@@ -64,6 +64,8 @@ public class ColorProfile {
 	public final ZLColorOption HyperlinkTextOption;
 	public final ZLColorOption VisitedHyperlinkTextOption;
 	public final ZLColorOption FooterFillOption;
+	public final ZLColorOption FooterBorderOption;
+	
 
 	private ColorProfile(String name, ColorProfile base) {
 		this(name);
@@ -101,7 +103,9 @@ public class ColorProfile {
 			VisitedHyperlinkTextOption =
 				createOption(name, "VisitedHyperlink", 200, 139, 255);
 			FooterFillOption =
-				createOption(name, "FooterFillOption", 85, 85, 85);
+				createOption(name, "FooterFillOption", 55, 55, 55);
+			FooterBorderOption =
+				createOption(name, "FooterBorderOption", 80, 80, 80);	
 		} else {
 			WallpaperOption =
 				new ZLStringOption("Colors", name + ":Wallpaper", "");
@@ -120,7 +124,9 @@ public class ColorProfile {
 			VisitedHyperlinkTextOption =
 				createOption(name, "VisitedHyperlink", 200, 139, 255);
 			FooterFillOption =
-				createOption(name, "FooterFillOption", 170, 170, 170);
+				createOption(name, "FooterFillOption", 230, 230, 230);
+			FooterBorderOption =
+				createOption(name, "FooterBorderOption", 200, 200, 200);
 		}
 	}
 }

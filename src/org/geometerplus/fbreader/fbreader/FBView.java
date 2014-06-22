@@ -510,12 +510,13 @@ public final class FBView extends ZLTextView {
 			final FooterOptions footerOptions = myViewOptions.getFooterOptions();
 			//final ZLColor bgColor = getBackgroundColor();
 			// TODO: separate color option for footer color
-			final ZLColor fgColor = getTextColor(ZLTextHyperlink.NO_LINK);
+			final ZLColor fgColor = myViewOptions.getColorProfile().FooterBorderOption.getValue();
+			final ZLColor textColor = getTextColor(ZLTextHyperlink.NO_LINK);
 			final ZLColor fillColor = myViewOptions.getColorProfile().FooterFillOption.getValue();
 
 			final int left = getLeftMargin();
 			final int right = context.getWidth() - getRightMargin();
-			final int height = getHeight();
+			final int height = getHeight()/2;
 			final int lineWidth = height <= 10 ? 1 : 2;
 			final int delta = height <= 10 ? 0 : 1;
 			final String family = footerOptions.Font.getValue();
@@ -535,6 +536,9 @@ public final class FBView extends ZLTextView {
 				info.append(pagePosition.Current);
 				info.append("/");
 				info.append(pagePosition.Total);
+				info.append(" (");
+				info.append(pagePosition.Current*100/pagePosition.Total);
+				info.append("%)");
 			}
 			if (footerOptions.ShowClock.getValue()) {
 				if (info.length() > 0) {
@@ -554,7 +558,7 @@ public final class FBView extends ZLTextView {
 			final int infoWidth = context.getStringWidth(infoString);
 
 			// draw info text
-			context.setTextColor(fgColor);
+			context.setTextColor(textColor);
 			context.drawString(right - infoWidth, height - delta, infoString);
 
 			// draw gauge

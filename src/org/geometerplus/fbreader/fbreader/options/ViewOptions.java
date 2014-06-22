@@ -48,22 +48,24 @@ public class ViewOptions {
 		final int y = zlibrary.getHeightInPixels();
 		final int horMargin = Math.min(dpi / 5, Math.min(x, y) / 30);
 
+		final int footer_height = dpi / 8;
+		final int margin = horMargin * 3 / 2;
 		TwoColumnView =
 			new ZLBooleanOption("Options", "TwoColumnView", x * x + y * y >= 42 * dpi * dpi);
 		LeftMargin =
-			new ZLIntegerRangeOption("Options", "LeftMargin", 0, 100, horMargin);
+			new ZLIntegerRangeOption("Options", "LeftMargin", 0, 100, margin);
 		RightMargin =
-			new ZLIntegerRangeOption("Options", "RightMargin", 0, 100, horMargin);
+			new ZLIntegerRangeOption("Options", "RightMargin", 0, 100, margin);
 		TopMargin =
-			new ZLIntegerRangeOption("Options", "TopMargin", 0, 100, 0);
+			new ZLIntegerRangeOption("Options", "TopMargin", 0, 100, margin);
 		BottomMargin =
-			new ZLIntegerRangeOption("Options", "BottomMargin", 0, 100, 4);
+			new ZLIntegerRangeOption("Options", "BottomMargin", 0, 100, margin-footer_height);
 		SpaceBetweenColumns =
 			new ZLIntegerRangeOption("Options", "SpaceBetweenColumns", 0, 300, 3 * horMargin);
 		ScrollbarType =
 			new ZLIntegerRangeOption("Options", "ScrollbarType", 0, 3, FBView.SCROLLBAR_SHOW_AS_FOOTER);
 		FooterHeight =
-			new ZLIntegerRangeOption("Options", "FooterHeight", 8, dpi / 8, dpi / 20);
+			new ZLIntegerRangeOption("Options", "FooterHeight", 8, dpi / 8, footer_height);
 		ColorProfileName =
 			new ZLStringOption("Options", "ColorProfile", ColorProfile.DAY);
 		ColorProfileName.setSpecialName("colorProfile");

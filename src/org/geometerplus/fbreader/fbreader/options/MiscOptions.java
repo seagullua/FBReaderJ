@@ -45,6 +45,6 @@ public class MiscOptions {
 			new ZLBooleanOption("Options", "NavigateAllWords", false);
 
 		WordTappingAction =
-			new ZLEnumOption<WordTappingActionEnum>("Options", "WordTappingAction", WordTappingActionEnum.startSelecting);
+			new ZLEnumOption<WordTappingActionEnum>("Options", "WordTappingAction", WordTappingActionEnum.doNothing);
 	}
 }

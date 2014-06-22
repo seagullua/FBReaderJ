@@ -30,8 +30,8 @@ public class FooterOptions {
 
 	public FooterOptions() {
 		ShowTOCMarks = new ZLBooleanOption("Options", "FooterShowTOCMarks", true);
-		ShowClock = new ZLBooleanOption("Options", "ShowClockInFooter", true);
-		ShowBattery = new ZLBooleanOption("Options", "ShowBatteryInFooter", true);
+		ShowClock = new ZLBooleanOption("Options", "ShowClockInFooter", false);
+		ShowBattery = new ZLBooleanOption("Options", "ShowBatteryInFooter", false);
 		ShowProgress = new ZLBooleanOption("Options", "ShowProgressInFooter", true);
 		Font = new ZLStringOption("Options", "FooterFont", "Droid Sans");
 	}
