@@ -30,13 +30,13 @@ public class SelectionTranslateAction extends FBAndroidAction {
 	@Override
 	protected void run(Object ... params) {
 		final FBView fbview = Reader.getTextView();
-		DictionaryUtil.openTextInDictionary(
-			BaseActivity,
-			fbview.getSelectedText(),
-			fbview.getCountOfSelectedWords() == 1,
-			fbview.getSelectionStartY(),
-			fbview.getSelectionEndY()
-		);
+//		DictionaryUtil.openTextInDictionary(
+//			BaseActivity,
+//			fbview.getSelectedText(),
+//			fbview.getCountOfSelectedWords() == 1,
+//			fbview.getSelectionStartY(),
+//			fbview.getSelectionEndY()
+//		);
 		fbview.clearSelection();
 	}
 }

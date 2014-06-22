@@ -81,9 +81,7 @@ class ProcessHyperlinkAction extends FBAndroidAction {
 				}
 			}
 		} else if (soul instanceof ZLTextWordRegionSoul) {
-			DictionaryUtil.openWordInDictionary(
-				BaseActivity, ((ZLTextWordRegionSoul)soul).Word, region
-			);
+			
 		}
 	}
 

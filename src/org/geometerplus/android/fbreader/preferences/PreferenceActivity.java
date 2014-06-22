@@ -41,7 +41,6 @@ import org.geometerplus.fbreader.bookmodel.FBTextKind;
 import org.geometerplus.fbreader.fbreader.*;
 import org.geometerplus.fbreader.fbreader.options.*;
 
-import org.geometerplus.android.fbreader.DictionaryUtil;
 import org.geometerplus.android.fbreader.FBReader;
 import org.geometerplus.android.fbreader.libraryService.BookCollectionShadow;
 import org.geometerplus.android.fbreader.preferences.fileChooser.FileChooserCollection;
@@ -507,58 +506,8 @@ public class PreferenceActivity extends ZLPreferenceActivity {
 		languages.add(0, new Language(
 			Language.ANY_CODE, dictionaryScreen.Resource.getResource("targetLanguage")
 		));
-		final LanguagePreference targetLanguagePreference = new LanguagePreference(
-			this, dictionaryScreen.Resource, "targetLanguage", languages
-		) {
-			@Override
-			protected void init() {
-				setInitialValue(DictionaryUtil.TargetLanguageOption.getValue());
-			}
-
-			@Override
-			protected void setLanguage(String code) {
-				DictionaryUtil.TargetLanguageOption.setValue(code);
-			}
-		};
-
-		DictionaryUtil.init(this, new Runnable() {
-			public void run() {
-				dictionaryScreen.addPreference(new DictionaryPreference(
-					PreferenceActivity.this,
-					dictionaryScreen.Resource,
-					"dictionary",
-					DictionaryUtil.singleWordTranslatorOption(),
-					DictionaryUtil.dictionaryInfos(PreferenceActivity.this, true)
-				) {
-					@Override
-					protected void onDialogClosed(boolean result) {
-						super.onDialogClosed(result);
-						targetLanguagePreference.setEnabled(
-							DictionaryUtil.getCurrentDictionaryInfo(true).SupportsTargetLanguageSetting
-						);
-					}
-				});
-				dictionaryScreen.addPreference(new DictionaryPreference(
-					PreferenceActivity.this,
-					dictionaryScreen.Resource,
-					"translator",
-					DictionaryUtil.multiWordTranslatorOption(),
-					DictionaryUtil.dictionaryInfos(PreferenceActivity.this, false)
-				));
-				dictionaryScreen.addPreference(new ZLBooleanPreference(
-					PreferenceActivity.this,
-					miscOptions.NavigateAllWords,
-					dictionaryScreen.Resource,
-					"navigateOverAllWords"
-				));
-				dictionaryScreen.addOption(miscOptions.WordTappingAction, "tappingAction");
-				dictionaryScreen.addPreference(targetLanguagePreference);
-				targetLanguagePreference.setEnabled(
-					DictionaryUtil.getCurrentDictionaryInfo(true).SupportsTargetLanguageSetting
-				);
-			}
-		});
-
+		
+		
 		final Screen imagesScreen = createPreferenceScreen("images");
 		imagesScreen.addOption(imageOptions.TapAction, "tappingAction");
 		imagesScreen.addOption(imageOptions.FitToScreen, "fitImagesToScreen");
