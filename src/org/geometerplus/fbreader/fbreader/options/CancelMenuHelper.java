@@ -31,9 +31,9 @@ public class CancelMenuHelper {
 	private final static String GROUP_NAME = "CancelMenu";
 
 	public final ZLBooleanOption ShowLibraryItemOption =
-		new ZLBooleanOption(GROUP_NAME, "library", true);
+		new ZLBooleanOption(GROUP_NAME, "library", false);
 	public final ZLBooleanOption ShowNetworkLibraryItemOption =
-		new ZLBooleanOption(GROUP_NAME, "networkLibrary", true);
+		new ZLBooleanOption(GROUP_NAME, "networkLibrary", false);
 	public final ZLBooleanOption ShowPreviousBookItemOption =
 		new ZLBooleanOption(GROUP_NAME, "previousBook", false);
 	public final ZLBooleanOption ShowPositionItemsOption =
