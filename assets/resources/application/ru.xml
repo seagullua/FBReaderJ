@@ -235,7 +235,7 @@
 		<node name="returnTo" value="Вернуться к …"/>
 		<node name="back" value="Назад"/>
 		<node name="forward" value="Вперед"/>
-		<node name="close" value="Закрыть FBReader"/>
+		<node name="close" value="Закрыть книгу"/>
 	</node>
 	<node name="style" value="Стиль №%s"/>
 	<node name="highlightingStyleMenu">
@@ -734,12 +734,12 @@
 				<node name="summaryOff" value="Не нужна возможность возврата по ссылкам"/>
 			</node>
 			<node name="backKeyAction" value="Действие по кнопке 'Назад'">
-				<node name="exit" value="Закрыть FBReader"/>
+				<node name="exit" value="Закрыть книгу"/>
 				<node name="goBack" value="Вернуться по ссылке"/>
 				<node name="cancelMenu" value="Показать список действий"/>
 			</node>
 			<node name="backKeyLongPressAction" value="Действие по долгому нажатию">
-				<node name="exit" value="Закрыть FBReader"/>
+				<node name="exit" value="Закрыть книгу"/>
 				<node name="goBack" value="Вернуться по ссылке"/>
 				<node name="cancelMenu" value="Показать список действий"/>
 				<node name="none" value="Ничего не делать"/>

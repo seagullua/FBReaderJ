@@ -220,7 +220,7 @@
 		<node name="returnTo" value="Повернутися до …"/>
 		<node name="back" value="Назад"/>
 		<node name="forward" value="Вперед"/>
-		<node name="close" value="Закрити FBReader"/>
+		<node name="close" value="Закрити книжку"/>
 	</node>
 	<node name="style" value="Style %s" toBeTranslated="true"/>
 	<node name="highlightingStyleMenu">
@@ -719,12 +719,12 @@
 				<node name="summaryOff" value="Сховати елементи для останніх трьох позицій в книзі"/>
 			</node>
 			<node name="backKeyAction" value="Дія кнопки назад">
-				<node name="exit" value="Закрити FBReader"/>
+				<node name="exit" value="Закрити книжку"/>
 				<node name="goBack" value="Перейти назад"/>
 				<node name="cancelMenu" value="Показати меню відміни"/>
 			</node>
 			<node name="backKeyLongPressAction" value="Дія довгого натискання кнопки назад">
-				<node name="exit" value="Закрити FBReader"/>
+				<node name="exit" value="Закрити книжку"/>
 				<node name="goBack" value="Перейти назад"/>
 				<node name="cancelMenu" value="Показати меню відміни"/>
 				<node name="none" value="Нічого не робити"/>
