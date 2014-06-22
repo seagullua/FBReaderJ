@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- English FBReaderJ resources, by Geometer Plus -->
+<!-- English J resources, by Geometer Plus -->
 <resources>
 	<node name="library" value="کتابخانه اف بی ریدر">
 		<node name="unknownAuthor" value="نویسنده نامشخص"/>
@@ -35,7 +35,7 @@
 		<node name="fileTreeCard" value="کارت حافظه">
 			<node name="summary" value="کارت حافظه وارد شد"/>
 		</node>
-		<node name="fileTreeLibrary" value="FBReader کتابخانه">
+		<node name="fileTreeLibrary" value=" کتابخانه">
 			<node name="summary" value="پوشه کتابهای اف بی ریدر"/>
 		</node>
 		<node name="menu">
@@ -254,7 +254,7 @@
 		<node name="clearSelection" value="پاک کردن"/>
 	</node>
 	<node name="sharing">
-		<node name="sharedFrom" value="به اشتراک گذتری شده توسط &lt;a href=&quot;http://fbreader.org/&quot;&gt;FBReader&lt;/a&gt;"/>
+		<node name="sharedFrom" value="به اشتراک گذتری شده توسط &lt;a href=&quot;http://fbreader.org/&quot;&gt;&lt;/a&gt;"/>
 	</node>
 	<node name="menu">
 		<node name="preferences" value="تنظیمات"/>
@@ -759,7 +759,7 @@
 			<node name="twitter" value="در توييتر مارا دنبال كنيد">
 				<node name="url" value="http://twitter.com/fbreader"/>
 			</node>
-			<node name="facebook" value="FBReader on facebook" toBeTranslated="true">
+			<node name="facebook" value=" on facebook" toBeTranslated="true">
 				<node name="url" value="https://facebook.com/fbreader"/>
 			</node>
 			<node name="thirdParty" value="Third-party libraries" toBeTranslated="true"/>
@@ -877,7 +877,7 @@
 			<node name="more" value="راس بعدي"/>
 		</node>
 		<node name="screenHint">
-			<node name="message1" value="FBReader works in fullscreen mode by default. Tap center third of the screen to show controls. You can change this behaviour in “Appearance” section of the Settings dialog." toBeTranslated="true"/>
+			<node name="message1" value=" works in fullscreen mode by default. Tap center third of the screen to show controls. You can change this behaviour in “Appearance” section of the Settings dialog." toBeTranslated="true"/>
 			<node name="message2" value="Well done! Now tap the center third again to hide the controls and this hint. If you want to keep controls on the screen during reading, select “Show action bar” option in “Appearance” section of the Settings dialog." toBeTranslated="true"/>
 		</node>
 		<node name="folderList">
@@ -910,7 +910,7 @@
 		<node name="pluginNotFound" value="پلاگینی وجود ندارد برای '%s'"/>
 		<node name="unknownPluginType" value="نوع پلاگین ناشناخته است: %s"/>
 		<node name="fileNotFound" value="فایل پیدا نشد: %s"/>
-		<node name="unsupportedEncryptionMethod" value="File %s is encrypted with method that is not supported by FBReader. Some pages are not readable" toBeTranslated="true"/>
+		<node name="unsupportedEncryptionMethod" value="File %s is encrypted with method that is not supported by . Some pages are not readable" toBeTranslated="true"/>
 		<node name="opfFileNotFound" value="OPF در %s پیدا نشد"/>
 		<node name="unsupportedFileFormat" value="فرمت فایل پشتیبانی نمیشود برای '%s'"/>
 		<node name="errorParsingRtf" value="Rtf parsing error in: %s" toBeTranslated="true"/>
@@ -941,7 +941,7 @@
 	<node name="crash">
 		<node name="fixBooksDirectory">
 			<node name="title" value="مشکل اف بی ریدر"/>
-			<node name="text" value="FBReader cache directory is not accessible for writing. May be you forget to insert or unmount your memory card. Please fix this issue or select another directory." toBeTranslated="true"/>
+			<node name="text" value=" cache directory is not accessible for writing. May be you forget to insert or unmount your memory card. Please fix this issue or select another directory." toBeTranslated="true"/>
 		</node>
 		<node name="missingNativeLibrary">
 			<node name="title" value="خطای اف بی ریدر"/>

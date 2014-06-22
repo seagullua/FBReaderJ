@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Polish FBReaderJ resources, by Tomasz Długosz -->
+<!-- Polish J resources, by Tomasz Długosz -->
 <resources>
-	<node name="library" value="Biblioteka FBReadera">
+	<node name="library" value="Biblioteka a">
 		<node name="unknownAuthor" value="Nieznany autor"/>
 		<node name="booksWithNoTags" value="Książki niesklasyfikowane"/>
 		<node name="demo" value="Demo"/>
@@ -35,8 +35,8 @@
 		<node name="fileTreeCard" value="Karta pamięci">
 			<node name="summary" value="Karta pamięci umieszczona w urządzeniu"/>
 		</node>
-		<node name="fileTreeLibrary" value="Biblioteka FBReadera">
-			<node name="summary" value="Katalog z książkami FBReadera"/>
+		<node name="fileTreeLibrary" value="Biblioteka a">
+			<node name="summary" value="Katalog z książkami a"/>
 		</node>
 		<node name="menu">
 			<node name="localSearch" value="Wyszukiwanie lokalne"/>
@@ -52,7 +52,7 @@
 		<node name="markAsRead" value="Mark as read" toBeTranslated="true"/>
 		<node name="markAsUnread" value="Mark as unread" toBeTranslated="true"/>
 	</node>
-	<node name="networkLibrary" value="Sieciowa biblioteka FBReadera">
+	<node name="networkLibrary" value="Sieciowa biblioteka a">
 		<node name="byAuthor" value="Po autorze">
 			<node name="summary" value="Książki posortowane po autorze"/>
 		</node>
@@ -220,7 +220,7 @@
 		<node name="returnTo" value="Wróć do …"/>
 		<node name="back" value="Wstecz"/>
 		<node name="forward" value="Do przodu"/>
-		<node name="close" value="Zamknij FBReadera"/>
+		<node name="close" value="Zamknij a"/>
 	</node>
 	<node name="style" value="Style %s" toBeTranslated="true"/>
 	<node name="highlightingStyleMenu">
@@ -244,7 +244,7 @@
 		<node name="clearSelection" value="Wyczyść"/>
 	</node>
 	<node name="sharing">
-		<node name="sharedFrom" value="Shared from &lt;a href=&quot;http://fbreader.org/&quot;&gt;FBReader&lt;/a&gt;" toBeTranslated="true"/>
+		<node name="sharedFrom" value="Shared from &lt;a href=&quot;http://fbreader.org/&quot;&gt;&lt;/a&gt;" toBeTranslated="true"/>
 	</node>
 	<node name="menu">
 		<node name="preferences" value="Ustawienia"/>
@@ -719,12 +719,12 @@
 				<node name="summaryOff" value="Nie Pokazuj pozycji dla 3 ostatnich lokalizacji w książce"/>
 			</node>
 			<node name="backKeyAction" value="Akcja przycisku wstecz">
-				<node name="exit" value="Zamknij FBReadera"/>
+				<node name="exit" value="Zamknij a"/>
 				<node name="goBack" value="Powrót do poprzedniej lokalizacji"/>
 				<node name="cancelMenu" value="Pokaż menu przycisku wstecz"/>
 			</node>
 			<node name="backKeyLongPressAction" value="akcja przytrzymania przycsku wstecz">
-				<node name="exit" value="Zamknij FBReadera"/>
+				<node name="exit" value="Zamknij a"/>
 				<node name="goBack" value="Powrót do poprzedniej lokalizacji"/>
 				<node name="cancelMenu" value="Pokaż menu przycisku wstecz"/>
 				<node name="none" value="Break akcji"/>
@@ -737,7 +737,7 @@
 				<node name="summaryOff" value="Nie pokazuj"/>
 			</node>
 		</node>
-		<node name="about" value="About FBReader" toBeTranslated="true">
+		<node name="about" value="About " toBeTranslated="true">
 			<node name="summary" value="Version info, contacts" toBeTranslated="true"/>
 			<node name="version" value="Version" toBeTranslated="true"/>
 			<node name="site" value="Visit our website" toBeTranslated="true">
@@ -749,7 +749,7 @@
 			<node name="twitter" value="Follow us at twitter" toBeTranslated="true">
 				<node name="url" value="http://twitter.com/fbreader"/>
 			</node>
-			<node name="facebook" value="FBReader on facebook" toBeTranslated="true">
+			<node name="facebook" value=" on facebook" toBeTranslated="true">
 				<node name="url" value="https://facebook.com/fbreader"/>
 			</node>
 			<node name="thirdParty" value="Third-party libraries" toBeTranslated="true"/>
@@ -844,7 +844,7 @@
 			<node name="register" value="Zarejestruj"/>
 		</node>
 		<node name="CustomCatalogDialog">
-			<node name="title" value="FBReader: dodaj własny katalog"/>
+			<node name="title" value=": dodaj własny katalog"/>
 			<node name="catalogTitle" value="Nazwa"/>
 			<node name="catalogUrl" value="URL"/>
 			<node name="catalogSummary" value="Opis"/>
@@ -862,12 +862,12 @@
 		</node>
 		<node name="tips">
 			<node name="title" value="Tip of the day" toBeTranslated="true"/>
-			<node name="initializationText" value="Would you like to read FBReader daily tips? New tips would be downloaded from FBReader site. Expected network traffic is 1-2 kilobytes per week.&#10;&#10;Enable tips?" toBeTranslated="true"/>
+			<node name="initializationText" value="Would you like to read  daily tips? New tips would be downloaded from  site. Expected network traffic is 1-2 kilobytes per week.&#10;&#10;Enable tips?" toBeTranslated="true"/>
 			<node name="dontShowAgain" value="Don't show again" toBeTranslated="true"/>
 			<node name="more" value="Next tip" toBeTranslated="true"/>
 		</node>
 		<node name="screenHint">
-			<node name="message1" value="FBReader works in fullscreen mode by default. Tap center third of the screen to show controls. You can change this behaviour in “Appearance” section of the Settings dialog." toBeTranslated="true"/>
+			<node name="message1" value=" works in fullscreen mode by default. Tap center third of the screen to show controls. You can change this behaviour in “Appearance” section of the Settings dialog." toBeTranslated="true"/>
 			<node name="message2" value="Well done! Now tap the center third again to hide the controls and this hint. If you want to keep controls on the screen during reading, select “Show action bar” option in “Appearance” section of the Settings dialog." toBeTranslated="true"/>
 		</node>
 		<node name="folderList">
@@ -900,7 +900,7 @@
 		<node name="pluginNotFound" value="No plugin for '%s'" toBeTranslated="true"/>
 		<node name="unknownPluginType" value="Unknown plugin type: %s" toBeTranslated="true"/>
 		<node name="fileNotFound" value="File not found: %s" toBeTranslated="true"/>
-		<node name="unsupportedEncryptionMethod" value="File %s is encrypted with method that is not supported by FBReader. Some pages are not readable" toBeTranslated="true"/>
+		<node name="unsupportedEncryptionMethod" value="File %s is encrypted with method that is not supported by . Some pages are not readable" toBeTranslated="true"/>
 		<node name="opfFileNotFound" value="OPF is not found in %s" toBeTranslated="true"/>
 		<node name="unsupportedFileFormat" value="File format is not supported for '%s'" toBeTranslated="true"/>
 		<node name="errorParsingRtf" value="Rtf parsing error in: %s" toBeTranslated="true"/>
@@ -930,17 +930,17 @@
 	</node>
 	<node name="crash">
 		<node name="fixBooksDirectory">
-			<node name="title" value="Problem z FBReaderem"/>
-			<node name="text" value="FBReader cache directory is not accessible for writing. May be you forget to insert or unmount your memory card. Please fix this issue or select another directory." toBeTranslated="true"/>
+			<node name="title" value="Problem z em"/>
+			<node name="text" value=" cache directory is not accessible for writing. May be you forget to insert or unmount your memory card. Please fix this issue or select another directory." toBeTranslated="true"/>
 		</node>
 		<node name="missingNativeLibrary">
-			<node name="title" value="Problem z FBReaderem"/>
-			<node name="text" value="FBReader nie może załadować natywnej biblioteki. Być może nie jest poprawnie zainstalowana. Jeśli problem będzie się powtarzał, proszę zainstalować FBReadera ponownie."/>
+			<node name="title" value="Problem z em"/>
+			<node name="text" value=" nie może załadować natywnej biblioteki. Być może nie jest poprawnie zainstalowana. Jeśli problem będzie się powtarzał, proszę zainstalować a ponownie."/>
 		</node>
 	</node>
 	<node name="error">
 		<node name="bookReading">
-			<node name="title" value="FBReader issue" toBeTranslated="true"/>
+			<node name="title" value=" issue" toBeTranslated="true"/>
 		</node>
 	</node>
 	<node name="links">

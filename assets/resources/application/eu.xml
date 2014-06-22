@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Basque FBReaderJ resources, by Bixerdo for librezale.org -->
+<!-- Basque J resources, by Bixerdo for librezale.org -->
 <resources>
-	<node name="library" value="FBReader Liburutegia">
+	<node name="library" value=" Liburutegia">
 		<node name="unknownAuthor" value="Egile ezezaguna"/>
 		<node name="booksWithNoTags" value="Etiketa gabeko liburuak"/>
 		<node name="demo" value="lagina"/>
@@ -35,8 +35,8 @@
 		<node name="fileTreeCard" value="Memoria txartela">
 			<node name="summary" value="Gailuan txertaturiko memoria txartela"/>
 		</node>
-		<node name="fileTreeLibrary" value="FBReader liburutegia">
-			<node name="summary" value="FBReadereko liburuen direktorioa"/>
+		<node name="fileTreeLibrary" value=" liburutegia">
+			<node name="summary" value="eko liburuen direktorioa"/>
 		</node>
 		<node name="menu">
 			<node name="localSearch" value="Bilatu"/>
@@ -52,7 +52,7 @@
 		<node name="markAsRead" value="Markatu irakurria bezala"/>
 		<node name="markAsUnread" value="Markatu irakurri gabea bezala"/>
 	</node>
-	<node name="networkLibrary" value="FBReadereko sare-liburutegia">
+	<node name="networkLibrary" value="eko sare-liburutegia">
 		<node name="byAuthor" value="Egileagatik">
 			<node name="summary" value="Egileagatik sailkatutako liburuak"/>
 		</node>
@@ -230,7 +230,7 @@
 		<node name="returnTo" value="Itzuli hona …"/>
 		<node name="back" value="Atzera"/>
 		<node name="forward" value="Aurrera"/>
-		<node name="close" value="Itxi FBReader"/>
+		<node name="close" value="Itxi "/>
 	</node>
 	<node name="style" value="%s estiloa"/>
 	<node name="highlightingStyleMenu">
@@ -254,7 +254,7 @@
 		<node name="clearSelection" value="Garbitu"/>
 	</node>
 	<node name="sharing">
-		<node name="sharedFrom" value="&lt;a href=&quot;http://fbreader.org/&quot;&gt;FBReader&lt;/a&gt; (e)tik partekatua"/>
+		<node name="sharedFrom" value="&lt;a href=&quot;http://fbreader.org/&quot;&gt;&lt;/a&gt; (e)tik partekatua"/>
 	</node>
 	<node name="menu">
 		<node name="preferences" value="Hobespenak"/>
@@ -729,12 +729,12 @@
 				<node name="summaryOff" value="Ez erakutsi liburuaren azkeneko 3 posizioen elementuak"/>
 			</node>
 			<node name="backKeyAction" value="Atzera botoiaren ekintzak">
-				<node name="exit" value="Itxi FBReader"/>
+				<node name="exit" value="Itxi "/>
 				<node name="goBack" value="Nabigatu atzera"/>
 				<node name="cancelMenu" value="Erakutsi utzi menua"/>
 			</node>
 			<node name="backKeyLongPressAction" value="Atzera botoiaren kolpetxo luzatuaren ekintzak">
-				<node name="exit" value="Itxi FBReader"/>
+				<node name="exit" value="Itxi "/>
 				<node name="goBack" value="Nabigatu atzera"/>
 				<node name="cancelMenu" value="Erakutsi utzi menua"/>
 				<node name="none" value="Ez egin ezer"/>
@@ -747,7 +747,7 @@
 				<node name="summaryOff" value="Ez erakutsi"/>
 			</node>
 		</node>
-		<node name="about" value="FBReader-i buruz">
+		<node name="about" value="-i buruz">
 			<node name="summary" value="Bertsioaren infoa, kontaktuak"/>
 			<node name="version" value="Bertsioa"/>
 			<node name="site" value="Webgunea bisitatu">
@@ -759,7 +759,7 @@
 			<node name="twitter" value="Twitter-en jarraitu">
 				<node name="url" value="http://twitter.com/fbreader"/>
 			</node>
-			<node name="facebook" value="FBReader on facebook" toBeTranslated="true">
+			<node name="facebook" value=" on facebook" toBeTranslated="true">
 				<node name="url" value="https://facebook.com/fbreader"/>
 			</node>
 			<node name="thirdParty" value="Third-party libraries" toBeTranslated="true"/>
@@ -776,9 +776,9 @@
 			<node name="summary" value="Kudeatu fitxategiek formatuak"/>
 			<node name="format" value="">
 				<node name="appNotSet" value="Aukeratu gabe"/>
-				<node name="java" value="FBReader (java)"/>
-				<node name="native" value="FBReader (jatorrizkoa)"/>
-				<node name="plugin" value="FBReader %s gehigarria"/>
+				<node name="java" value=" (java)"/>
+				<node name="native" value=" (jatorrizkoa)"/>
+				<node name="plugin" value=" %s gehigarria"/>
 				<node name="delete" value="kendu formatua"/>
 				<node name="addNewFormat" value="gehitu formatu berria"/>
 			</node>
@@ -867,7 +867,7 @@
 			<node name="register" value="Izena eman"/>
 		</node>
 		<node name="CustomCatalogDialog">
-			<node name="title" value="FBReader: Gehitu katalogo pertsonalizatua"/>
+			<node name="title" value=": Gehitu katalogo pertsonalizatua"/>
 			<node name="catalogTitle" value="Izenburua"/>
 			<node name="catalogUrl" value="URL"/>
 			<node name="catalogSummary" value="Laburpena"/>
@@ -885,12 +885,12 @@
 		</node>
 		<node name="tips">
 			<node name="title" value="Eguneko aholkua"/>
-			<node name="initializationText" value="FBReader-en eguneko aholkua irakurri nahi? Aholku berriak FBReader-en webgunetik deskargatuko dira, asteko 1-2 kbren neurrira.&#10;&#10;Gaitu aholkuak?"/>
+			<node name="initializationText" value="-en eguneko aholkua irakurri nahi? Aholku berriak -en webgunetik deskargatuko dira, asteko 1-2 kbren neurrira.&#10;&#10;Gaitu aholkuak?"/>
 			<node name="dontShowAgain" value="Ez berriro erakutsi"/>
 			<node name="more" value="Hurrengo aholkua"/>
 		</node>
 		<node name="screenHint">
-			<node name="message1" value="FBReader works in fullscreen mode by default. Tap center third of the screen to show controls. You can change this behaviour in “Appearance” section of the Settings dialog." toBeTranslated="true"/>
+			<node name="message1" value=" works in fullscreen mode by default. Tap center third of the screen to show controls. You can change this behaviour in “Appearance” section of the Settings dialog." toBeTranslated="true"/>
 			<node name="message2" value="Well done! Now tap the center third again to hide the controls and this hint. If you want to keep controls on the screen during reading, select “Show action bar” option in “Appearance” section of the Settings dialog." toBeTranslated="true"/>
 		</node>
 		<node name="folderList">
@@ -923,7 +923,7 @@
 		<node name="pluginNotFound" value="Ez dago gehigarririk '%s' (r)entzat"/>
 		<node name="unknownPluginType" value="Gehigarri mota ezezaguna: %s"/>
 		<node name="fileNotFound" value="Aurkitzen ez den fitxategia: %s"/>
-		<node name="unsupportedEncryptionMethod" value="File %s is encrypted with method that is not supported by FBReader. Some pages are not readable" toBeTranslated="true"/>
+		<node name="unsupportedEncryptionMethod" value="File %s is encrypted with method that is not supported by . Some pages are not readable" toBeTranslated="true"/>
 		<node name="opfFileNotFound" value="Ez da OPF aurkitzen %s (e)n"/>
 		<node name="unsupportedFileFormat" value="Ez da onartzen  '%s' (r)en fitxategi formatua"/>
 		<node name="errorParsingRtf" value="RTF prozesatzerakoan hemen: %s"/>
@@ -959,17 +959,17 @@
 	</node>
 	<node name="crash">
 		<node name="fixBooksDirectory">
-			<node name="title" value="FBReader arazoa"/>
-			<node name="text" value="FBReader cache directory is not accessible for writing. May be you forget to insert or unmount your memory card. Please fix this issue or select another directory." toBeTranslated="true"/>
+			<node name="title" value=" arazoa"/>
+			<node name="text" value=" cache directory is not accessible for writing. May be you forget to insert or unmount your memory card. Please fix this issue or select another directory." toBeTranslated="true"/>
 		</node>
 		<node name="missingNativeLibrary">
-			<node name="title" value="FBReader arazoa"/>
-			<node name="text" value="FBReader-ek ezin izan du bertako liburutegia kargatu. Baliteke egoki kargatuta ez izatea. Arazoa jarraitu ezkero saiatu FBReader berriro instalatzen, mesedez."/>
+			<node name="title" value=" arazoa"/>
+			<node name="text" value="-ek ezin izan du bertako liburutegia kargatu. Baliteke egoki kargatuta ez izatea. Arazoa jarraitu ezkero saiatu  berriro instalatzen, mesedez."/>
 		</node>
 	</node>
 	<node name="error">
 		<node name="bookReading">
-			<node name="title" value="FBReader arazoa"/>
+			<node name="title" value=" arazoa"/>
 		</node>
 	</node>
 	<node name="links">

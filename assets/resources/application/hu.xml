@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Hungarian FBReaderJ resources, by L. B. Szabó.  -->
+<!-- Hungarian J resources, by L. B. Szabó.  -->
 <resources>
-	<node name="library" value="FBReader könyvtár">
+	<node name="library" value=" könyvtár">
 		<node name="unknownAuthor" value="Ismeretlen szerző"/>
 		<node name="booksWithNoTags" value="Címke nélküli könyvek"/>
 		<node name="demo" value="minta"/>
@@ -35,8 +35,8 @@
 		<node name="fileTreeCard" value="Memóriakártya">
 			<node name="summary" value="Az eszközbe illesztett memóriakártya"/>
 		</node>
-		<node name="fileTreeLibrary" value="FBReader mappa">
-			<node name="summary" value="Az FBReader e-könyvek mappája"/>
+		<node name="fileTreeLibrary" value=" mappa">
+			<node name="summary" value="Az  e-könyvek mappája"/>
 		</node>
 		<node name="menu">
 			<node name="localSearch" value="Helyi keresés"/>
@@ -52,7 +52,7 @@
 		<node name="markAsRead" value="Megjelölés olvasottként"/>
 		<node name="markAsUnread" value="Megjelölés olvasatlanként"/>
 	</node>
-	<node name="networkLibrary" value="FBReader internetes könyvtár">
+	<node name="networkLibrary" value=" internetes könyvtár">
 		<node name="byAuthor" value="Szerző">
 			<node name="summary" value="Könyvek szerző szerint"/>
 		</node>
@@ -220,7 +220,7 @@
 		<node name="returnTo" value="Visszatérés …"/>
 		<node name="back" value="Vissza"/>
 		<node name="forward" value="Előre"/>
-		<node name="close" value="FBReader bezárása"/>
+		<node name="close" value=" bezárása"/>
 	</node>
 	<node name="style" value="Stílus %s"/>
 	<node name="highlightingStyleMenu">
@@ -244,7 +244,7 @@
 		<node name="clearSelection" value="Kijelölés eltávolítása"/>
 	</node>
 	<node name="sharing">
-		<node name="sharedFrom" value="Megosztva az &lt;a href=&quot;http://fbreader.org/&quot;&gt;FBReader&lt;/a&gt;ből"/>
+		<node name="sharedFrom" value="Megosztva az &lt;a href=&quot;http://fbreader.org/&quot;&gt;&lt;/a&gt;ből"/>
 	</node>
 	<node name="menu">
 		<node name="preferences" value="Beállítások"/>
@@ -719,12 +719,12 @@
 				<node name="summaryOff" value="Ne mutassa az utolsó 3 pozíciót"/>
 			</node>
 			<node name="backKeyAction" value="Vissza gomb műveletek">
-				<node name="exit" value="FBReader bezárása"/>
+				<node name="exit" value=" bezárása"/>
 				<node name="goBack" value="Navigáljon vissza a szövegben"/>
 				<node name="cancelMenu" value="Vissza menü megjelenítése"/>
 			</node>
 			<node name="backKeyLongPressAction" value="Vissza gomb hosszú nyomására">
-				<node name="exit" value="FBReader bezárása"/>
+				<node name="exit" value=" bezárása"/>
 				<node name="goBack" value="Navigáljon vissza a szövegben"/>
 				<node name="cancelMenu" value="Vissza menü megjelenítése"/>
 				<node name="none" value="Semmit ne tegyen"/>
@@ -737,7 +737,7 @@
 				<node name="summaryOff" value="Ne mutasson"/>
 			</node>
 		</node>
-		<node name="about" value="Az FBReader névjegye">
+		<node name="about" value="Az  névjegye">
 			<node name="summary" value="Verziószám, kapcsolat"/>
 			<node name="version" value="Verzió"/>
 			<node name="site" value="Ugrás a weboldalunkra">
@@ -749,7 +749,7 @@
 			<node name="twitter" value="Kövessen Twitteren">
 				<node name="url" value="http://twitter.com/fbreader"/>
 			</node>
-			<node name="facebook" value="FBReader on facebook" toBeTranslated="true">
+			<node name="facebook" value=" on facebook" toBeTranslated="true">
 				<node name="url" value="https://facebook.com/fbreader"/>
 			</node>
 			<node name="thirdParty" value="Third-party libraries" toBeTranslated="true"/>
@@ -844,7 +844,7 @@
 			<node name="register" value="Regisztráció"/>
 		</node>
 		<node name="CustomCatalogDialog">
-			<node name="title" value="FBReader: egyéni katalógus hozzáadása"/>
+			<node name="title" value=": egyéni katalógus hozzáadása"/>
 			<node name="catalogTitle" value="Cím"/>
 			<node name="catalogUrl" value="URL"/>
 			<node name="catalogSummary" value="Leírás"/>
@@ -862,12 +862,12 @@
 		</node>
 		<node name="tips">
 			<node name="title" value="A nap tippje"/>
-			<node name="initializationText" value="Szeretne naponta tippeket kapni az FBReaderről? Az új tippek az FBReader webhelyéről töltődnek le. A várható hálózati forgalom 1-2 kilobyte hetente.&#10;&#10;Bekapcsolja a tippeket?"/>
+			<node name="initializationText" value="Szeretne naponta tippeket kapni az ről? Az új tippek az  webhelyéről töltődnek le. A várható hálózati forgalom 1-2 kilobyte hetente.&#10;&#10;Bekapcsolja a tippeket?"/>
 			<node name="dontShowAgain" value="Ne mutassa többet"/>
 			<node name="more" value="Következő"/>
 		</node>
 		<node name="screenHint">
-			<node name="message1" value="FBReader works in fullscreen mode by default. Tap center third of the screen to show controls. You can change this behaviour in “Appearance” section of the Settings dialog." toBeTranslated="true"/>
+			<node name="message1" value=" works in fullscreen mode by default. Tap center third of the screen to show controls. You can change this behaviour in “Appearance” section of the Settings dialog." toBeTranslated="true"/>
 			<node name="message2" value="Well done! Now tap the center third again to hide the controls and this hint. If you want to keep controls on the screen during reading, select “Show action bar” option in “Appearance” section of the Settings dialog." toBeTranslated="true"/>
 		</node>
 		<node name="folderList">
@@ -900,7 +900,7 @@
 		<node name="pluginNotFound" value="Nem található bővítmény '%s'"/>
 		<node name="unknownPluginType" value="Ismeretlen bővítmény típus: %s"/>
 		<node name="fileNotFound" value="A fájl nem található: %s"/>
-		<node name="unsupportedEncryptionMethod" value="File %s is encrypted with method that is not supported by FBReader. Some pages are not readable" toBeTranslated="true"/>
+		<node name="unsupportedEncryptionMethod" value="File %s is encrypted with method that is not supported by . Some pages are not readable" toBeTranslated="true"/>
 		<node name="opfFileNotFound" value="OPF inem található %s"/>
 		<node name="unsupportedFileFormat" value="Nem támogatott fájlformátum: '%s'"/>
 		<node name="errorParsingRtf" value="Rtf feldolgozási hiba: %s"/>
@@ -930,17 +930,17 @@
 	</node>
 	<node name="crash">
 		<node name="fixBooksDirectory">
-			<node name="title" value="FBReader probléma"/>
-			<node name="text" value="FBReader cache directory is not accessible for writing. May be you forget to insert or unmount your memory card. Please fix this issue or select another directory." toBeTranslated="true"/>
+			<node name="title" value=" probléma"/>
+			<node name="text" value=" cache directory is not accessible for writing. May be you forget to insert or unmount your memory card. Please fix this issue or select another directory." toBeTranslated="true"/>
 		</node>
 		<node name="missingNativeLibrary">
-			<node name="title" value="FBReader probléma"/>
-			<node name="text" value="Az FBReader nem tudta betölteni a helyi könyvtárat. Lehet, hogy nincs megfelelően telepítve. Ha a probléma nem szűnik meg, próbálja meg újratelepíteni az FBReadert."/>
+			<node name="title" value=" probléma"/>
+			<node name="text" value="Az  nem tudta betölteni a helyi könyvtárat. Lehet, hogy nincs megfelelően telepítve. Ha a probléma nem szűnik meg, próbálja meg újratelepíteni az t."/>
 		</node>
 	</node>
 	<node name="error">
 		<node name="bookReading">
-			<node name="title" value="FBReader probléma"/>
+			<node name="title" value=" probléma"/>
 		</node>
 	</node>
 	<node name="links">

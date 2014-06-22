@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Chinese FBReaderJ resources, by http://shucang.com/ -->
+<!-- Chinese J resources, by http://shucang.com/ -->
 <resources>
-	<node name="library" value="FBReader 书库">
+	<node name="library" value=" 书库">
 		<node name="unknownAuthor" value="佚名"/>
 		<node name="booksWithNoTags" value="未归类"/>
 		<node name="demo" value="试读本"/>
@@ -35,8 +35,8 @@
 		<node name="fileTreeCard" value="SD存储卡">
 			<node name="summary" value="插入设备的存储卡"/>
 		</node>
-		<node name="fileTreeLibrary" value="FBReader 文件夹">
-			<node name="summary" value="FBReader 存放书刊的文件夹"/>
+		<node name="fileTreeLibrary" value=" 文件夹">
+			<node name="summary" value=" 存放书刊的文件夹"/>
 		</node>
 		<node name="menu">
 			<node name="localSearch" value="本地搜索"/>
@@ -52,7 +52,7 @@
 		<node name="markAsRead" value="标记为已读"/>
 		<node name="markAsUnread" value="标记为未读"/>
 	</node>
-	<node name="networkLibrary" value="FBReader 网络书库">
+	<node name="networkLibrary" value=" 网络书库">
 		<node name="byAuthor" value="作者">
 			<node name="summary" value="按作者排序"/>
 		</node>
@@ -220,7 +220,7 @@
 		<node name="returnTo" value="返回到…"/>
 		<node name="back" value="后退"/>
 		<node name="forward" value="前进"/>
-		<node name="close" value="关闭FBReader"/>
+		<node name="close" value="关闭"/>
 	</node>
 	<node name="style" value="样式 %s"/>
 	<node name="highlightingStyleMenu">
@@ -244,7 +244,7 @@
 		<node name="clearSelection" value="清除"/>
 	</node>
 	<node name="sharing">
-		<node name="sharedFrom" value="共享自 &lt;a href=&quot;http://fbreader.org/&quot;&gt;FBReader&lt;/a&gt; "/>
+		<node name="sharedFrom" value="共享自 &lt;a href=&quot;http://fbreader.org/&quot;&gt;&lt;/a&gt; "/>
 	</node>
 	<node name="menu">
 		<node name="preferences" value="阅读相关设置"/>
@@ -719,12 +719,12 @@
 				<node name="summaryOff" value="不显示最近浏览的3处位置"/>
 			</node>
 			<node name="backKeyAction" value="回退键动作设定">
-				<node name="exit" value="关闭 FBReader"/>
+				<node name="exit" value="关闭 "/>
 				<node name="goBack" value="后退到前一个界面"/>
 				<node name="cancelMenu" value="显示取消菜单"/>
 			</node>
 			<node name="backKeyLongPressAction" value="长按回退键动作设定">
-				<node name="exit" value="关闭FBReader"/>
+				<node name="exit" value="关闭"/>
 				<node name="goBack" value="后退到前一个界面"/>
 				<node name="cancelMenu" value="显示取消菜单"/>
 				<node name="none" value="不做任何事"/>
@@ -737,7 +737,7 @@
 				<node name="summaryOff" value="不显示"/>
 			</node>
 		</node>
-		<node name="about" value="关于FBReader">
+		<node name="about" value="关于">
 			<node name="summary" value="版本信息, 联系人"/>
 			<node name="version" value="版本"/>
 			<node name="site" value="访问我们的网站">
@@ -749,7 +749,7 @@
 			<node name="twitter" value="关注我们的twitter">
 				<node name="url" value="http://twitter.com/fbreader"/>
 			</node>
-			<node name="facebook" value="FBReader on facebook" toBeTranslated="true">
+			<node name="facebook" value=" on facebook" toBeTranslated="true">
 				<node name="url" value="https://facebook.com/fbreader"/>
 			</node>
 			<node name="thirdParty" value="Third-party libraries" toBeTranslated="true"/>
@@ -844,7 +844,7 @@
 			<node name="register" value="注册"/>
 		</node>
 		<node name="CustomCatalogDialog">
-			<node name="title" value="FBReader: 添加自设书库"/>
+			<node name="title" value=": 添加自设书库"/>
 			<node name="catalogTitle" value="书库名称"/>
 			<node name="catalogUrl" value="书库网址"/>
 			<node name="catalogSummary" value="简介"/>
@@ -862,12 +862,12 @@
 		</node>
 		<node name="tips">
 			<node name="title" value="今天提示"/>
-			<node name="initializationText" value="你希望阅读FBReader每日提示吗? 新的提示将从FBReader网站下载. 每周使用流量大约 1-2 K字节.&#10;&#10;启用小提示吗?"/>
+			<node name="initializationText" value="你希望阅读每日提示吗? 新的提示将从网站下载. 每周使用流量大约 1-2 K字节.&#10;&#10;启用小提示吗?"/>
 			<node name="dontShowAgain" value="不要再显示"/>
 			<node name="more" value="下个提示"/>
 		</node>
 		<node name="screenHint">
-			<node name="message1" value="FBReader works in fullscreen mode by default. Tap center third of the screen to show controls. You can change this behaviour in “Appearance” section of the Settings dialog." toBeTranslated="true"/>
+			<node name="message1" value=" works in fullscreen mode by default. Tap center third of the screen to show controls. You can change this behaviour in “Appearance” section of the Settings dialog." toBeTranslated="true"/>
 			<node name="message2" value="Well done! Now tap the center third again to hide the controls and this hint. If you want to keep controls on the screen during reading, select “Show action bar” option in “Appearance” section of the Settings dialog." toBeTranslated="true"/>
 		</node>
 		<node name="folderList">
@@ -900,7 +900,7 @@
 		<node name="pluginNotFound" value="没有这个插件 '%s'"/>
 		<node name="unknownPluginType" value="未知插件类型: %s"/>
 		<node name="fileNotFound" value="文件未找到: %s"/>
-		<node name="unsupportedEncryptionMethod" value="File %s is encrypted with method that is not supported by FBReader. Some pages are not readable" toBeTranslated="true"/>
+		<node name="unsupportedEncryptionMethod" value="File %s is encrypted with method that is not supported by . Some pages are not readable" toBeTranslated="true"/>
 		<node name="opfFileNotFound" value="在 %s 文件夹未找到 OPF  "/>
 		<node name="unsupportedFileFormat" value="文件格式 '%s' 不支持"/>
 		<node name="errorParsingRtf" value="Rtf解析错误: %s"/>
@@ -930,17 +930,17 @@
 	</node>
 	<node name="crash">
 		<node name="fixBooksDirectory">
-			<node name="title" value="FBReader 问题"/>
-			<node name="text" value="FBReader cache directory is not accessible for writing. May be you forget to insert or unmount your memory card. Please fix this issue or select another directory." toBeTranslated="true"/>
+			<node name="title" value=" 问题"/>
+			<node name="text" value=" cache directory is not accessible for writing. May be you forget to insert or unmount your memory card. Please fix this issue or select another directory." toBeTranslated="true"/>
 		</node>
 		<node name="missingNativeLibrary">
-			<node name="title" value="FBReader 问题"/>
-			<node name="text" value="FBReader无法加载本地库. 可能未正确安装. 如果问题还存在, 请重新安装FBReader."/>
+			<node name="title" value=" 问题"/>
+			<node name="text" value="无法加载本地库. 可能未正确安装. 如果问题还存在, 请重新安装."/>
 		</node>
 	</node>
 	<node name="error">
 		<node name="bookReading">
-			<node name="title" value="FBReader 问题"/>
+			<node name="title" value=" 问题"/>
 		</node>
 	</node>
 	<node name="links">

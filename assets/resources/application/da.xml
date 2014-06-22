@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- English FBReaderJ resources, by Geometer Plus -->
+<!-- English J resources, by Geometer Plus -->
 <resources>
 	<node name="library" value="FB-Læser bibliotek">
 		<node name="unknownAuthor" value="Ukendt forfatter"/>
@@ -759,7 +759,7 @@
 			<node name="twitter" value="Følg os på Twitter">
 				<node name="url" value="e-mail til:contact@geometerplus.com"/>
 			</node>
-			<node name="facebook" value="FBReader on facebook" toBeTranslated="true">
+			<node name="facebook" value=" on facebook" toBeTranslated="true">
 				<node name="url" value="https://facebook.com/fbreader"/>
 			</node>
 			<node name="thirdParty" value="Third-party libraries" toBeTranslated="true"/>
@@ -889,7 +889,7 @@
 			<node name="more" value="Næste tip"/>
 		</node>
 		<node name="screenHint">
-			<node name="message1" value="FBReader works in fullscreen mode by default. Tap center third of the screen to show controls. You can change this behaviour in “Appearance” section of the Settings dialog." toBeTranslated="true"/>
+			<node name="message1" value=" works in fullscreen mode by default. Tap center third of the screen to show controls. You can change this behaviour in “Appearance” section of the Settings dialog." toBeTranslated="true"/>
 			<node name="message2" value="Well done! Now tap the center third again to hide the controls and this hint. If you want to keep controls on the screen during reading, select “Show action bar” option in “Appearance” section of the Settings dialog." toBeTranslated="true"/>
 		</node>
 		<node name="folderList">
@@ -922,7 +922,7 @@
 		<node name="pluginNotFound" value="Ingen plugin for '%s'"/>
 		<node name="unknownPluginType" value="Ukendt plugin-type  %s"/>
 		<node name="fileNotFound" value="Filen blev ikke fundet: %s"/>
-		<node name="unsupportedEncryptionMethod" value="File %s is encrypted with method that is not supported by FBReader. Some pages are not readable" toBeTranslated="true"/>
+		<node name="unsupportedEncryptionMethod" value="File %s is encrypted with method that is not supported by . Some pages are not readable" toBeTranslated="true"/>
 		<node name="opfFileNotFound" value="OPF blev ikke fundet i %s"/>
 		<node name="unsupportedFileFormat" value="Filformatet understøttes ikke for '%s'"/>
 		<node name="errorParsingRtf" value="RTF-parsingfejl i: %s"/>
@@ -959,7 +959,7 @@
 	<node name="crash">
 		<node name="fixBooksDirectory">
 			<node name="title" value="FB-Læser problem"/>
-			<node name="text" value="FBReader cache directory is not accessible for writing. May be you forget to insert or unmount your memory card. Please fix this issue or select another directory." toBeTranslated="true"/>
+			<node name="text" value=" cache directory is not accessible for writing. May be you forget to insert or unmount your memory card. Please fix this issue or select another directory." toBeTranslated="true"/>
 		</node>
 		<node name="missingNativeLibrary">
 			<node name="title" value="FB-Læser problem"/>

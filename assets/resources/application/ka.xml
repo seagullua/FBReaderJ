@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Georgian FBReaderJ resources, by Zurab Sebiskveradze, George Zautashvili -->
+<!-- Georgian J resources, by Zurab Sebiskveradze, George Zautashvili -->
 <resources>
-	<node name="library" value="FBReader: ბიბლიოთეკა">
+	<node name="library" value=": ბიბლიოთეკა">
 		<node name="unknownAuthor" value="ავტორი არ არის მითითებული"/>
 		<node name="booksWithNoTags" value="წიგნები კატეგორიის გარეშე"/>
 		<node name="demo" value="ფრაგმენტი"/>
@@ -35,7 +35,7 @@
 		<node name="fileTreeCard" value="მეხსიერების ბარათი">
 			<node name="summary" value="მეხსიერების ბარათის დათვალიერება"/>
 		</node>
-		<node name="fileTreeLibrary" value="ბიბლიოთეკა FBReader">
+		<node name="fileTreeLibrary" value="ბიბლიოთეკა ">
 			<node name="summary" value="წიგნების კატალოგის დათვალიერება"/>
 		</node>
 		<node name="menu">
@@ -52,7 +52,7 @@
 		<node name="markAsRead" value="Mark as read" toBeTranslated="true"/>
 		<node name="markAsUnread" value="Mark as unread" toBeTranslated="true"/>
 	</node>
-	<node name="networkLibrary" value="FBReader: ქსელური ბიბლიოთეკა">
+	<node name="networkLibrary" value=": ქსელური ბიბლიოთეკა">
 		<node name="byAuthor" value="ავტორებით">
 			<node name="summary" value="წიგნები, დალაგებული ავტორების მიხედვით"/>
 		</node>
@@ -235,7 +235,7 @@
 		<node name="returnTo" value="დაბრუნება…"/>
 		<node name="back" value="უკან"/>
 		<node name="forward" value="წინ"/>
-		<node name="close" value="FBReader დახურვა"/>
+		<node name="close" value=" დახურვა"/>
 	</node>
 	<node name="style" value="Style %s" toBeTranslated="true"/>
 	<node name="highlightingStyleMenu">
@@ -259,7 +259,7 @@
 		<node name="clearSelection" value="ნიშნულის მოხსნა"/>
 	</node>
 	<node name="sharing">
-		<node name="sharedFrom" value="გამოგზავნილია &lt;a href=&quot;http://ru.fbreader.org/&quot;&gt;FBReader&lt;/a&gt;-დან"/>
+		<node name="sharedFrom" value="გამოგზავნილია &lt;a href=&quot;http://ru.fbreader.org/&quot;&gt;&lt;/a&gt;-დან"/>
 	</node>
 	<node name="menu">
 		<node name="preferences" value="პარამეტრები"/>
@@ -734,12 +734,12 @@
 				<node name="summaryOff" value="არ არის საჭირო წინა ლინკზე დაბრუნების შესაძლებლობის არსებობა"/>
 			</node>
 			<node name="backKeyAction" value="ქმედება ღილაკზე 'უკან'">
-				<node name="exit" value="FBReader-ის დახურვა"/>
+				<node name="exit" value="-ის დახურვა"/>
 				<node name="goBack" value="ლინკზე დაბრუნება"/>
 				<node name="cancelMenu" value="ქმედებების ჩამონათვალის ჩვენება"/>
 			</node>
 			<node name="backKeyLongPressAction" value="ხანგრძლივი დაჭერის ქმედება">
-				<node name="exit" value="FBReader-ის დახურვა"/>
+				<node name="exit" value="-ის დახურვა"/>
 				<node name="goBack" value="ლინკზე დაბრუნება"/>
 				<node name="cancelMenu" value="ქმედებების ჩამონათვალის ჩვენება"/>
 				<node name="none" value="არაფრის გაკეთება"/>
@@ -752,7 +752,7 @@
 				<node name="summaryOff" value="არ ჩვენება"/>
 			</node>
 		</node>
-		<node name="about" value="FBReader პროგრამის შესახებ">
+		<node name="about" value=" პროგრამის შესახებ">
 			<node name="summary" value="ვერსია, კონტაქტები"/>
 			<node name="version" value="ვერსია"/>
 			<node name="site" value="ჩვენი ვებ-გვერდი">
@@ -764,7 +764,7 @@
 			<node name="twitter" value="გამოგვყევით ტვიტერზე">
 				<node name="url" value="http://twitter.com/fbreader_ru"/>
 			</node>
-			<node name="facebook" value="FBReader on facebook" toBeTranslated="true">
+			<node name="facebook" value=" on facebook" toBeTranslated="true">
 				<node name="url" value="https://facebook.com/fbreader"/>
 			</node>
 			<node name="thirdParty" value="Third-party libraries" toBeTranslated="true"/>
@@ -859,7 +859,7 @@
 			<node name="register" value="დარეგისტრირება"/>
 		</node>
 		<node name="CustomCatalogDialog">
-			<node name="title" value="FBReader: კატალოგის დამატება"/>
+			<node name="title" value=": კატალოგის დამატება"/>
 			<node name="catalogTitle" value="დასახელება"/>
 			<node name="catalogUrl" value="URL"/>
 			<node name="catalogSummary" value="აღწერილობა"/>
@@ -877,12 +877,12 @@
 		</node>
 		<node name="tips">
 			<node name="title" value="დღის რჩევა"/>
-			<node name="initializationText" value="გნებავთ დღეში ერთხელ მიიღოთ რჩევები FBReader-ის მოხმარებაზე? ახალი რჩევები ჩაიტვირთება FBReader-ის სერვერიდან. საჭიროებს 1-2 კილობაიტის გადმოტვირთვას კვირაში.&#10;&#10;ჩავრთოთ რჩევები?"/>
+			<node name="initializationText" value="გნებავთ დღეში ერთხელ მიიღოთ რჩევები -ის მოხმარებაზე? ახალი რჩევები ჩაიტვირთება -ის სერვერიდან. საჭიროებს 1-2 კილობაიტის გადმოტვირთვას კვირაში.&#10;&#10;ჩავრთოთ რჩევები?"/>
 			<node name="dontShowAgain" value="მეტჯერ აღარ მანახო"/>
 			<node name="more" value="მეტი"/>
 		</node>
 		<node name="screenHint">
-			<node name="message1" value="FBReader works in fullscreen mode by default. Tap center third of the screen to show controls. You can change this behaviour in “Appearance” section of the Settings dialog." toBeTranslated="true"/>
+			<node name="message1" value=" works in fullscreen mode by default. Tap center third of the screen to show controls. You can change this behaviour in “Appearance” section of the Settings dialog." toBeTranslated="true"/>
 			<node name="message2" value="Well done! Now tap the center third again to hide the controls and this hint. If you want to keep controls on the screen during reading, select “Show action bar” option in “Appearance” section of the Settings dialog." toBeTranslated="true"/>
 		</node>
 		<node name="folderList">
@@ -915,7 +915,7 @@
 		<node name="pluginNotFound" value="ვერ მოიძებნა პლაგინი '%s'-სთვის"/>
 		<node name="unknownPluginType" value="უცნობი ტიპის პლაგინი: %s"/>
 		<node name="fileNotFound" value="არ მოიძებნა ფაილი: %s"/>
-		<node name="unsupportedEncryptionMethod" value="File %s is encrypted with method that is not supported by FBReader. Some pages are not readable" toBeTranslated="true"/>
+		<node name="unsupportedEncryptionMethod" value="File %s is encrypted with method that is not supported by . Some pages are not readable" toBeTranslated="true"/>
 		<node name="opfFileNotFound" value="არ მოიძებნა OPF %s-ში"/>
 		<node name="unsupportedFileFormat" value="'%s' ფაილის ფორმატი არ არის მხარდაჭერილი"/>
 		<node name="errorParsingRtf" value="შეცდომა RTF-ფაილის %s კითხვისას"/>
@@ -945,17 +945,17 @@
 	</node>
 	<node name="crash">
 		<node name="fixBooksDirectory">
-			<node name="title" value="FBReader-ის პრობლემა"/>
-			<node name="text" value="FBReader cache directory is not accessible for writing. May be you forget to insert or unmount your memory card. Please fix this issue or select another directory." toBeTranslated="true"/>
+			<node name="title" value="-ის პრობლემა"/>
+			<node name="text" value=" cache directory is not accessible for writing. May be you forget to insert or unmount your memory card. Please fix this issue or select another directory." toBeTranslated="true"/>
 		</node>
 		<node name="missingNativeLibrary">
-			<node name="title" value="FBReader-ის პრობლემა"/>
-			<node name="text" value="ვერ ხერხდება ადგილობრივი ბიბლიოთეკის ჩატვირთვა. შეიძლება, FBReader არასწორედ არის დაყენებული. თუ ეს შეტყობინება მეორდება ყოველი გახსნის მცდელობისას, მაშინ სცადეთ გადააყენოთ FBReader ახლიდან."/>
+			<node name="title" value="-ის პრობლემა"/>
+			<node name="text" value="ვერ ხერხდება ადგილობრივი ბიბლიოთეკის ჩატვირთვა. შეიძლება,  არასწორედ არის დაყენებული. თუ ეს შეტყობინება მეორდება ყოველი გახსნის მცდელობისას, მაშინ სცადეთ გადააყენოთ  ახლიდან."/>
 		</node>
 	</node>
 	<node name="error">
 		<node name="bookReading">
-			<node name="title" value="FBReader-ის პრობლემა"/>
+			<node name="title" value="-ის პრობლემა"/>
 		</node>
 	</node>
 	<node name="links">

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Ukrainian FBReaderJ resources, by Dmytro Shevchenko, Nazariy Makarenko -->
+<!-- Ukrainian J resources, by Dmytro Shevchenko, Nazariy Makarenko -->
 <resources>
-	<node name="library" value="FBReader бібліотека">
+	<node name="library" value=" бібліотека">
 		<node name="unknownAuthor" value="Автор не вказаний"/>
 		<node name="booksWithNoTags" value="Книги поза категоріями"/>
 		<node name="demo" value="уривок"/>
@@ -35,8 +35,8 @@
 		<node name="fileTreeCard" value="Карта пам'яті">
 			<node name="summary" value="Підключена карта пам'яті"/>
 		</node>
-		<node name="fileTreeLibrary" value="Бібліотека FBReader">
-			<node name="summary" value="Бібліотека книг FBReader"/>
+		<node name="fileTreeLibrary" value="Бібліотека ">
+			<node name="summary" value="Бібліотека книг "/>
 		</node>
 		<node name="menu">
 			<node name="localSearch" value="Пошук"/>
@@ -52,7 +52,7 @@
 		<node name="markAsRead" value="Mark as read" toBeTranslated="true"/>
 		<node name="markAsUnread" value="Mark as unread" toBeTranslated="true"/>
 	</node>
-	<node name="networkLibrary" value="Мережева бібліотека FBReader">
+	<node name="networkLibrary" value="Мережева бібліотека ">
 		<node name="byAuthor" value="За автором">
 			<node name="summary" value="Книги відсортовані за автором"/>
 		</node>
@@ -244,7 +244,7 @@
 		<node name="clearSelection" value="Прибрати позначку"/>
 	</node>
 	<node name="sharing">
-		<node name="sharedFrom" value="Поширено з &lt;a href=&quot;http://ru.fbreader.org/&quot;&gt;FBReader&lt;/a&gt;"/>
+		<node name="sharedFrom" value="Поширено з &lt;a href=&quot;http://ru.fbreader.org/&quot;&gt;&lt;/a&gt;"/>
 	</node>
 	<node name="menu">
 		<node name="preferences" value="Налаштування"/>
@@ -737,7 +737,7 @@
 				<node name="summaryOff" value="Не показувати"/>
 			</node>
 		</node>
-		<node name="about" value="Про FBReader">
+		<node name="about" value="Про ">
 			<node name="summary" value="Інформація про версію, контакти"/>
 			<node name="version" value="Версія"/>
 			<node name="site" value="Зайти на наш вебсайт">
@@ -749,7 +749,7 @@
 			<node name="twitter" value="Зафоловити нас на Твітері">
 				<node name="url" value="http://twitter.com/fbreader_ru"/>
 			</node>
-			<node name="facebook" value="FBReader on facebook" toBeTranslated="true">
+			<node name="facebook" value=" on facebook" toBeTranslated="true">
 				<node name="url" value="https://facebook.com/fbreader"/>
 			</node>
 			<node name="thirdParty" value="Third-party libraries" toBeTranslated="true"/>
@@ -844,7 +844,7 @@
 			<node name="register" value="Зареєструватися"/>
 		</node>
 		<node name="CustomCatalogDialog">
-			<node name="title" value="FBReader: додати спеціальний каталог"/>
+			<node name="title" value=": додати спеціальний каталог"/>
 			<node name="catalogTitle" value="Назва"/>
 			<node name="catalogUrl" value="URL"/>
 			<node name="catalogSummary" value="Опис"/>
@@ -862,12 +862,12 @@
 		</node>
 		<node name="tips">
 			<node name="title" value="Порада дня"/>
-			<node name="initializationText" value="Чи хочете ви читати щоденні поради FBReader? Нові поради будуть завантажені з сайту FBReader. Очікуваний інтернет-трафік 1-2 кілобайти на тиждень.&#10;&#10;Ввімкнути поради?"/>
+			<node name="initializationText" value="Чи хочете ви читати щоденні поради ? Нові поради будуть завантажені з сайту . Очікуваний інтернет-трафік 1-2 кілобайти на тиждень.&#10;&#10;Ввімкнути поради?"/>
 			<node name="dontShowAgain" value="Не показувати знову"/>
 			<node name="more" value="Наступна порада"/>
 		</node>
 		<node name="screenHint">
-			<node name="message1" value="FBReader works in fullscreen mode by default. Tap center third of the screen to show controls. You can change this behaviour in “Appearance” section of the Settings dialog." toBeTranslated="true"/>
+			<node name="message1" value=" works in fullscreen mode by default. Tap center third of the screen to show controls. You can change this behaviour in “Appearance” section of the Settings dialog." toBeTranslated="true"/>
 			<node name="message2" value="Well done! Now tap the center third again to hide the controls and this hint. If you want to keep controls on the screen during reading, select “Show action bar” option in “Appearance” section of the Settings dialog." toBeTranslated="true"/>
 		</node>
 		<node name="folderList">
@@ -900,7 +900,7 @@
 		<node name="pluginNotFound" value="Немає плагіну для '%s'"/>
 		<node name="unknownPluginType" value="Невідомий тип плагіну: %s"/>
 		<node name="fileNotFound" value="Файл не знайдено: %s"/>
-		<node name="unsupportedEncryptionMethod" value="File %s is encrypted with method that is not supported by FBReader. Some pages are not readable" toBeTranslated="true"/>
+		<node name="unsupportedEncryptionMethod" value="File %s is encrypted with method that is not supported by . Some pages are not readable" toBeTranslated="true"/>
 		<node name="opfFileNotFound" value="OPF не знайдено в %s"/>
 		<node name="unsupportedFileFormat" value="Формат файлу не підтримується для '%s'"/>
 		<node name="errorParsingRtf" value="Помилка обробки Rtf в: %s"/>
@@ -930,17 +930,17 @@
 	</node>
 	<node name="crash">
 		<node name="fixBooksDirectory">
-			<node name="title" value="Проблема з FBReader"/>
-			<node name="text" value="FBReader cache directory is not accessible for writing. May be you forget to insert or unmount your memory card. Please fix this issue or select another directory." toBeTranslated="true"/>
+			<node name="title" value="Проблема з "/>
+			<node name="text" value=" cache directory is not accessible for writing. May be you forget to insert or unmount your memory card. Please fix this issue or select another directory." toBeTranslated="true"/>
 		</node>
 		<node name="missingNativeLibrary">
-			<node name="title" value="Проблема з FBReader"/>
-			<node name="text" value="FBReader не може завантажити native library. Можливо її не встановлено. Якщо проблема залишається, спробуйте перевстановити FBReader."/>
+			<node name="title" value="Проблема з "/>
+			<node name="text" value=" не може завантажити native library. Можливо її не встановлено. Якщо проблема залишається, спробуйте перевстановити ."/>
 		</node>
 	</node>
 	<node name="error">
 		<node name="bookReading">
-			<node name="title" value="неполадка FBReader"/>
+			<node name="title" value="неполадка "/>
 		</node>
 	</node>
 	<node name="links">

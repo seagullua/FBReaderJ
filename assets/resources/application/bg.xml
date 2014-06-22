@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Bulgarian FBReaderJ resources, by Ники Арсов -->
+<!-- Bulgarian J resources, by Ники Арсов -->
 <resources>
-	<node name="library" value="FBReader: библиотека">
+	<node name="library" value=": библиотека">
 		<node name="unknownAuthor" value="Неизвестен автор"/>
 		<node name="booksWithNoTags" value="Книги без категория"/>
 		<node name="demo" value="демо"/>
@@ -35,7 +35,7 @@
 		<node name="fileTreeCard" value="Карта памет">
 			<node name="summary" value="Картата работи"/>
 		</node>
-		<node name="fileTreeLibrary" value="Библиотека FBReader">
+		<node name="fileTreeLibrary" value="Библиотека ">
 			<node name="summary" value="Каталог на книгите"/>
 		</node>
 		<node name="menu">
@@ -52,7 +52,7 @@
 		<node name="markAsRead" value="Mark as read" toBeTranslated="true"/>
 		<node name="markAsUnread" value="Mark as unread" toBeTranslated="true"/>
 	</node>
-	<node name="networkLibrary" value="FBReader: мрежова библиотека">
+	<node name="networkLibrary" value=": мрежова библиотека">
 		<node name="byAuthor" value="Автор">
 			<node name="summary" value="Книги, подредени по автори"/>
 		</node>
@@ -235,7 +235,7 @@
 		<node name="returnTo" value="Отиди на…"/>
 		<node name="back" value="Назад"/>
 		<node name="forward" value="Напред"/>
-		<node name="close" value="Затвори FBReader"/>
+		<node name="close" value="Затвори "/>
 	</node>
 	<node name="style" value="Style %s" toBeTranslated="true"/>
 	<node name="highlightingStyleMenu">
@@ -259,7 +259,7 @@
 		<node name="clearSelection" value="Премахни"/>
 	</node>
 	<node name="sharing">
-		<node name="sharedFrom" value="Изпратено от &lt;a href=&quot;http://fbreader.org/&quot;&gt;FBReader&lt;/a&gt;"/>
+		<node name="sharedFrom" value="Изпратено от &lt;a href=&quot;http://fbreader.org/&quot;&gt;&lt;/a&gt;"/>
 	</node>
 	<node name="menu">
 		<node name="preferences" value="Настройки"/>
@@ -734,12 +734,12 @@
 				<node name="summaryOff" value="Не показвай последните 3 отбелязвания в книгата"/>
 			</node>
 			<node name="backKeyAction" value="Действие на бутона 'Назад'">
-				<node name="exit" value="Затвори FBReader"/>
+				<node name="exit" value="Затвори "/>
 				<node name="goBack" value="Връщане"/>
 				<node name="cancelMenu" value="Покажи меню 'Изход'"/>
 			</node>
 			<node name="backKeyLongPressAction" value="Действие при продължителен натиск">
-				<node name="exit" value="Затвори FBReader"/>
+				<node name="exit" value="Затвори "/>
 				<node name="goBack" value="Връщане"/>
 				<node name="cancelMenu" value="Покажи меню 'Изход'"/>
 				<node name="none" value="Не се извършва действие"/>
@@ -752,7 +752,7 @@
 				<node name="summaryOff" value="Не показвай"/>
 			</node>
 		</node>
-		<node name="about" value="За програмата FBReader">
+		<node name="about" value="За програмата ">
 			<node name="summary" value="Версия, контакти"/>
 			<node name="version" value="Версия"/>
 			<node name="site" value="Сайт">
@@ -764,7 +764,7 @@
 			<node name="twitter" value="Пoследвайте ни в Twitter">
 				<node name="url" value="http://twitter.com/fbreader"/>
 			</node>
-			<node name="facebook" value="FBReader on facebook" toBeTranslated="true">
+			<node name="facebook" value=" on facebook" toBeTranslated="true">
 				<node name="url" value="https://facebook.com/fbreader"/>
 			</node>
 			<node name="thirdParty" value="Third-party libraries" toBeTranslated="true"/>
@@ -859,7 +859,7 @@
 			<node name="register" value="Регистрация"/>
 		</node>
 		<node name="CustomCatalogDialog">
-			<node name="title" value="FBReader: добавяне на каталога"/>
+			<node name="title" value=": добавяне на каталога"/>
 			<node name="catalogTitle" value="Заглавие"/>
 			<node name="catalogUrl" value="URL"/>
 			<node name="catalogSummary" value="Описание"/>
@@ -877,12 +877,12 @@
 		</node>
 		<node name="tips">
 			<node name="title" value="Съвет на деня"/>
-			<node name="initializationText" value="Желате ли да получавате съвети за работа с BReader веднъж дневно? Новите съвети ще се зареждат от сървъра на FBReader. Седмичен трафик 1-2 килобайта.&#10;&#10;Включи съветите?"/>
+			<node name="initializationText" value="Желате ли да получавате съвети за работа с BReader веднъж дневно? Новите съвети ще се зареждат от сървъра на . Седмичен трафик 1-2 килобайта.&#10;&#10;Включи съветите?"/>
 			<node name="dontShowAgain" value="Не показвай повече"/>
 			<node name="more" value="Още"/>
 		</node>
 		<node name="screenHint">
-			<node name="message1" value="FBReader works in fullscreen mode by default. Tap center third of the screen to show controls. You can change this behaviour in “Appearance” section of the Settings dialog." toBeTranslated="true"/>
+			<node name="message1" value=" works in fullscreen mode by default. Tap center third of the screen to show controls. You can change this behaviour in “Appearance” section of the Settings dialog." toBeTranslated="true"/>
 			<node name="message2" value="Well done! Now tap the center third again to hide the controls and this hint. If you want to keep controls on the screen during reading, select “Show action bar” option in “Appearance” section of the Settings dialog." toBeTranslated="true"/>
 		</node>
 		<node name="folderList">
@@ -915,7 +915,7 @@
 		<node name="pluginNotFound" value="Няма плъгин за '%s'"/>
 		<node name="unknownPluginType" value="Неизвестен тип плъгин: %s"/>
 		<node name="fileNotFound" value="Липсващ файл: %s"/>
-		<node name="unsupportedEncryptionMethod" value="File %s is encrypted with method that is not supported by FBReader. Some pages are not readable" toBeTranslated="true"/>
+		<node name="unsupportedEncryptionMethod" value="File %s is encrypted with method that is not supported by . Some pages are not readable" toBeTranslated="true"/>
 		<node name="opfFileNotFound" value="OPF файлът не е намерен в %s"/>
 		<node name="unsupportedFileFormat" value="Файловият формат '%s' не се поддържа"/>
 		<node name="errorParsingRtf" value="Грешка при четенето на RTF файла %s"/>
@@ -945,17 +945,17 @@
 	</node>
 	<node name="crash">
 		<node name="fixBooksDirectory">
-			<node name="title" value="Проблем с FBReader"/>
-			<node name="text" value="FBReader cache directory is not accessible for writing. May be you forget to insert or unmount your memory card. Please fix this issue or select another directory." toBeTranslated="true"/>
+			<node name="title" value="Проблем с "/>
+			<node name="text" value=" cache directory is not accessible for writing. May be you forget to insert or unmount your memory card. Please fix this issue or select another directory." toBeTranslated="true"/>
 		</node>
 		<node name="missingNativeLibrary">
-			<node name="title" value="Проблем с FBReader"/>
-			<node name="text" value="FBReader библиотеката не може да се зареди. Вероятно FBReader не е инсталиран правилно. Ако съобщението не спре да се появява, преинсталирайте FBReader."/>
+			<node name="title" value="Проблем с "/>
+			<node name="text" value=" библиотеката не може да се зареди. Вероятно  не е инсталиран правилно. Ако съобщението не спре да се появява, преинсталирайте ."/>
 		</node>
 	</node>
 	<node name="error">
 		<node name="bookReading">
-			<node name="title" value="Проблем с FBReader"/>
+			<node name="title" value="Проблем с "/>
 		</node>
 	</node>
 	<node name="links">

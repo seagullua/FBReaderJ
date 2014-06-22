@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Czech FBReaderJ resources, by Marek Pavelka -->
+<!-- Czech J resources, by Marek Pavelka -->
 <resources>
-	<node name="library" value="Knihovna FBReaderu">
+	<node name="library" value="Knihovna u">
 		<node name="unknownAuthor" value="Neznámý autor"/>
 		<node name="booksWithNoTags" value="Knihy bez štítků"/>
 		<node name="demo" value="ukázka"/>
@@ -35,8 +35,8 @@
 		<node name="fileTreeCard" value="Paměťová karta">
 			<node name="summary" value="Paměťová karta vložena do zařízení"/>
 		</node>
-		<node name="fileTreeLibrary" value="Knihovna FBReaderu">
-			<node name="summary" value="Adresář s knihami pro FBReader"/>
+		<node name="fileTreeLibrary" value="Knihovna u">
+			<node name="summary" value="Adresář s knihami pro "/>
 		</node>
 		<node name="menu">
 			<node name="localSearch" value="Místní hledání"/>
@@ -52,7 +52,7 @@
 		<node name="markAsRead" value="Označit jako přečtené"/>
 		<node name="markAsUnread" value="Označit jako nepřečtené"/>
 	</node>
-	<node name="networkLibrary" value="Síťová knihovna FBReaderu">
+	<node name="networkLibrary" value="Síťová knihovna u">
 		<node name="byAuthor" value="Podle autora">
 			<node name="summary" value="Knihy seřazeny podle autora"/>
 		</node>
@@ -239,7 +239,7 @@
 		<node name="returnTo" value="Vrátit se…"/>
 		<node name="back" value="Zpět"/>
 		<node name="forward" value="Vpřed"/>
-		<node name="close" value="Zavřít FBReader"/>
+		<node name="close" value="Zavřít "/>
 	</node>
 	<node name="style" value="Styl %s"/>
 	<node name="highlightingStyleMenu">
@@ -263,7 +263,7 @@
 		<node name="clearSelection" value="Vymazat"/>
 	</node>
 	<node name="sharing">
-		<node name="sharedFrom" value="Sdíleno z &lt;a href=&quot;http://fbreader.org/&quot;&gt;FBReader&lt;/a&gt;"/>
+		<node name="sharedFrom" value="Sdíleno z &lt;a href=&quot;http://fbreader.org/&quot;&gt;&lt;/a&gt;"/>
 	</node>
 	<node name="menu">
 		<node name="preferences" value="Nastavení"/>
@@ -738,12 +738,12 @@
 				<node name="summaryOff" value="Nezobrazovat položky pro poslední 3 pozice v knize"/>
 			</node>
 			<node name="backKeyAction" value="Akce tlačítka Zpět">
-				<node name="exit" value="Zavřít FBReader"/>
+				<node name="exit" value="Zavřít "/>
 				<node name="goBack" value="Navigovat zpět"/>
 				<node name="cancelMenu" value="Zobrazit nabídku Zrušit"/>
 			</node>
 			<node name="backKeyLongPressAction" value="Akce dlouhého stisknutí tlačítka Zpět">
-				<node name="exit" value="Zavřít FBReader"/>
+				<node name="exit" value="Zavřít "/>
 				<node name="goBack" value="Navigovat zpět"/>
 				<node name="cancelMenu" value="Zobrazit nabídku Zrušit"/>
 				<node name="none" value="Žádná akce"/>
@@ -756,7 +756,7 @@
 				<node name="summaryOff" value="Nezobrazovat"/>
 			</node>
 		</node>
-		<node name="about" value="O aplikaci FBReader">
+		<node name="about" value="O aplikaci ">
 			<node name="summary" value="Informace o verzi, kontakty"/>
 			<node name="version" value="Verze"/>
 			<node name="site" value="Navštivte naši webovou stránku">
@@ -768,7 +768,7 @@
 			<node name="twitter" value="Sledujte nás na twitteru">
 				<node name="url" value="http://twitter.com/fbreader"/>
 			</node>
-			<node name="facebook" value="FBReader na Facebooku">
+			<node name="facebook" value=" na Facebooku">
 				<node name="url" value="https://facebook.com/fbreader"/>
 			</node>
 			<node name="thirdParty" value="Knihovny třetích stran"/>
@@ -863,7 +863,7 @@
 			<node name="register" value="Přihlásit"/>
 		</node>
 		<node name="CustomCatalogDialog">
-			<node name="title" value="FBReader: přidat vlastní katalog"/>
+			<node name="title" value=": přidat vlastní katalog"/>
 			<node name="catalogTitle" value="Název"/>
 			<node name="catalogUrl" value="Adresa"/>
 			<node name="catalogSummary" value="Stručný obsah"/>
@@ -881,12 +881,12 @@
 		</node>
 		<node name="tips">
 			<node name="title" value="Denní tip"/>
-			<node name="initializationText" value="Chtěli byste číst denní tipy FBReaderu? Nové tipy by byly stahovány ze stránky FBReaderu. Předpokládaný provoz v síti je 1–2 kilobajty týdně.&#10;&#10;Povolit tipy?"/>
+			<node name="initializationText" value="Chtěli byste číst denní tipy u? Nové tipy by byly stahovány ze stránky u. Předpokládaný provoz v síti je 1–2 kilobajty týdně.&#10;&#10;Povolit tipy?"/>
 			<node name="dontShowAgain" value="Znovu nezobrazovat"/>
 			<node name="more" value="Další tip"/>
 		</node>
 		<node name="screenHint">
-			<node name="message1" value="FBReader ve výchozím nastavení pracuje v režimu celé obrazovky. Klepnutím na prostřední třetinu obrazovky se zobrazí ovládání. Toto chování můžete změnit v části „Vzhled“ dialogového okna Nastavení."/>
+			<node name="message1" value=" ve výchozím nastavení pracuje v režimu celé obrazovky. Klepnutím na prostřední třetinu obrazovky se zobrazí ovládání. Toto chování můžete změnit v části „Vzhled“ dialogového okna Nastavení."/>
 			<node name="message2" value="Výborně! Dalším klepnutím na prostřední třetinu obrazovky se skryje ovládání a tato nápověda. Pokud chcete ponechat během čtení ovládání na obrazovce, vyberte volbu „Zobrazit panel akcí“ v části „Vzhled“ dialogového okna Nastavení."/>
 		</node>
 		<node name="folderList">
@@ -919,7 +919,7 @@
 		<node name="pluginNotFound" value="Žádný doplněk pro '%s'"/>
 		<node name="unknownPluginType" value="Neznámý typ doplňku: %s"/>
 		<node name="fileNotFound" value="Soubor nebyl nalezen: %s"/>
-		<node name="unsupportedEncryptionMethod" value="Soubor %s je šifrovaný metodou, kterou FBReader nepodporuje. Některé stránky nelze číst."/>
+		<node name="unsupportedEncryptionMethod" value="Soubor %s je šifrovaný metodou, kterou  nepodporuje. Některé stránky nelze číst."/>
 		<node name="opfFileNotFound" value="OPF nebyl nalezen v %s"/>
 		<node name="unsupportedFileFormat" value="Formát souboru není podporován pro '%s'"/>
 		<node name="errorParsingRtf" value="Chyba analýzy RTF v: %s"/>
@@ -949,17 +949,17 @@
 	</node>
 	<node name="crash">
 		<node name="fixBooksDirectory">
-			<node name="title" value="Problém FBReaderu"/>
-			<node name="text" value="Adresář mezipaměti FBReaderu není přístupný pro zápis. Možná jste zapomněli vložit nebo odpojit paměťovou kartu. Opravte tento problém nebo vyberte jiný adresář."/>
+			<node name="title" value="Problém u"/>
+			<node name="text" value="Adresář mezipaměti u není přístupný pro zápis. Možná jste zapomněli vložit nebo odpojit paměťovou kartu. Opravte tento problém nebo vyberte jiný adresář."/>
 		</node>
 		<node name="missingNativeLibrary">
-			<node name="title" value="Problém FBReaderu"/>
-			<node name="text" value="FBReader nemůže načíst místní knihovnu. Možná není správně nainstalován. Pokud problém přetrvává, zkuste znovu nainstalovat FBReader."/>
+			<node name="title" value="Problém u"/>
+			<node name="text" value=" nemůže načíst místní knihovnu. Možná není správně nainstalován. Pokud problém přetrvává, zkuste znovu nainstalovat ."/>
 		</node>
 	</node>
 	<node name="error">
 		<node name="bookReading">
-			<node name="title" value="Problém FBReaderu"/>
+			<node name="title" value="Problém u"/>
 		</node>
 	</node>
 	<node name="links">

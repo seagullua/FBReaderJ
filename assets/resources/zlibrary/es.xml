@@ -2,8 +2,8 @@
 <!-- Spanish zlibrary resources, by Antonio Trueba, updated by Francisco Alvarado -->
 <!-- CHANGELOG
 	19-09-2013: Updated (Diego Bernardi, sponsored by Panacea Supplies)
-	11-05-2012: Update release as per FBReader v1.6.5 (Francisco Alvarado)
-	07-30-2011: First complete release as per FBReader v. 1.1.9 (Antonio Trueba)
+	11-05-2012: Update release as per  v1.6.5 (Francisco Alvarado)
+	07-30-2011: First complete release as per  v. 1.1.9 (Antonio Trueba)
 -->
 <resources>
 	<node name="dialog">

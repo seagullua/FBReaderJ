@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Norwegian bokmål FBReaderJ resources, by Haakon Meland Eriksen -->
+<!-- Norwegian bokmål J resources, by Haakon Meland Eriksen -->
 <resources>
-	<node name="library" value="FBReader bibliotek">
+	<node name="library" value=" bibliotek">
 		<node name="unknownAuthor" value="Ukjent forfatter"/>
 		<node name="booksWithNoTags" value="Bøker uten merkelapper"/>
 		<node name="demo" value="smakebit"/>
@@ -35,8 +35,8 @@
 		<node name="fileTreeCard" value="Minnekort">
 			<node name="summary" value="Minnekort i enheten"/>
 		</node>
-		<node name="fileTreeLibrary" value="FBReader bibliotek">
-			<node name="summary" value="FBReader bokkatalog"/>
+		<node name="fileTreeLibrary" value=" bibliotek">
+			<node name="summary" value=" bokkatalog"/>
 		</node>
 		<node name="menu">
 			<node name="localSearch" value="Søk"/>
@@ -52,7 +52,7 @@
 		<node name="markAsRead" value="Mark as read" toBeTranslated="true"/>
 		<node name="markAsUnread" value="Mark as unread" toBeTranslated="true"/>
 	</node>
-	<node name="networkLibrary" value="FBReader nettverksbibliotek">
+	<node name="networkLibrary" value=" nettverksbibliotek">
 		<node name="byAuthor" value="Etter forfatter">
 			<node name="summary" value="Bøker sortert på forfatter"/>
 		</node>
@@ -230,7 +230,7 @@
 		<node name="returnTo" value="Gå tilbake til …"/>
 		<node name="back" value="Tilbake"/>
 		<node name="forward" value="Fram"/>
-		<node name="close" value="Lukk FBReader"/>
+		<node name="close" value="Lukk "/>
 	</node>
 	<node name="style" value="Style %s" toBeTranslated="true"/>
 	<node name="highlightingStyleMenu">
@@ -254,7 +254,7 @@
 		<node name="clearSelection" value="Tøm"/>
 	</node>
 	<node name="sharing">
-		<node name="sharedFrom" value="Delt fra &lt;a href=&quot;http://fbreader.org/&quot;&gt;FBReader&lt;/a&gt;"/>
+		<node name="sharedFrom" value="Delt fra &lt;a href=&quot;http://fbreader.org/&quot;&gt;&lt;/a&gt;"/>
 	</node>
 	<node name="menu">
 		<node name="preferences" value="Innstillinger"/>
@@ -729,12 +729,12 @@
 				<node name="summaryOff" value="Ikke vis elementer for de siste tre posisjonene i boken"/>
 			</node>
 			<node name="backKeyAction" value="Tilbakeknapp handling">
-				<node name="exit" value="Lukk FBReader"/>
+				<node name="exit" value="Lukk "/>
 				<node name="goBack" value="Naviger tilbake"/>
 				<node name="cancelMenu" value="Vis avbryt meny"/>
 			</node>
 			<node name="backKeyLongPressAction" value="Tilbakeknapp - handling ved langvarig trykk">
-				<node name="exit" value="Lukk FBReader"/>
+				<node name="exit" value="Lukk "/>
 				<node name="goBack" value="Naviger tilbake"/>
 				<node name="cancelMenu" value="Vis avbryt meny"/>
 				<node name="none" value="Ingen handling"/>
@@ -747,7 +747,7 @@
 				<node name="summaryOff" value="Ikke vis"/>
 			</node>
 		</node>
-		<node name="about" value="Om FBReader">
+		<node name="about" value="Om ">
 			<node name="summary" value="Versjonsinfo, kontakter"/>
 			<node name="version" value="Versjon"/>
 			<node name="site" value="Besøk nettstedet vårt">
@@ -759,7 +759,7 @@
 			<node name="twitter" value="Følg oss på Twitter">
 				<node name="url" value="http://twitter.com/fbreader"/>
 			</node>
-			<node name="facebook" value="FBReader on facebook" toBeTranslated="true">
+			<node name="facebook" value=" on facebook" toBeTranslated="true">
 				<node name="url" value="https://facebook.com/fbreader"/>
 			</node>
 			<node name="thirdParty" value="Third-party libraries" toBeTranslated="true"/>
@@ -854,7 +854,7 @@
 			<node name="register" value="Registrer deg"/>
 		</node>
 		<node name="CustomCatalogDialog">
-			<node name="title" value="FBReader: legg til katalog selv"/>
+			<node name="title" value=": legg til katalog selv"/>
 			<node name="catalogTitle" value="Tittel"/>
 			<node name="catalogUrl" value="URL"/>
 			<node name="catalogSummary" value="Sammendrag"/>
@@ -872,12 +872,12 @@
 		</node>
 		<node name="tips">
 			<node name="title" value="Dagens tips"/>
-			<node name="initializationText" value="Ønsker du å lese daglige tips i FBReader? Nye tips vil bli lastet ned fra nettstedet til FBReader. Forventet nettverkstrafikk er 1-2 kilobytes per uke.&#10;&#10;Skru på tips?"/>
+			<node name="initializationText" value="Ønsker du å lese daglige tips i ? Nye tips vil bli lastet ned fra nettstedet til . Forventet nettverkstrafikk er 1-2 kilobytes per uke.&#10;&#10;Skru på tips?"/>
 			<node name="dontShowAgain" value="Ikke vis igjen"/>
 			<node name="more" value="Neste tips"/>
 		</node>
 		<node name="screenHint">
-			<node name="message1" value="FBReader works in fullscreen mode by default. Tap center third of the screen to show controls. You can change this behaviour in “Appearance” section of the Settings dialog." toBeTranslated="true"/>
+			<node name="message1" value=" works in fullscreen mode by default. Tap center third of the screen to show controls. You can change this behaviour in “Appearance” section of the Settings dialog." toBeTranslated="true"/>
 			<node name="message2" value="Well done! Now tap the center third again to hide the controls and this hint. If you want to keep controls on the screen during reading, select “Show action bar” option in “Appearance” section of the Settings dialog." toBeTranslated="true"/>
 		</node>
 		<node name="folderList">
@@ -910,7 +910,7 @@
 		<node name="pluginNotFound" value="Ingen tillegg for '%s'"/>
 		<node name="unknownPluginType" value="Ukjent tilleggstype: %s"/>
 		<node name="fileNotFound" value="Filen ble ikke funnet: %s"/>
-		<node name="unsupportedEncryptionMethod" value="File %s is encrypted with method that is not supported by FBReader. Some pages are not readable" toBeTranslated="true"/>
+		<node name="unsupportedEncryptionMethod" value="File %s is encrypted with method that is not supported by . Some pages are not readable" toBeTranslated="true"/>
 		<node name="opfFileNotFound" value="OPF er ikke funnet i %s"/>
 		<node name="unsupportedFileFormat" value="Filformatet er ikke støttet for '%s'"/>
 		<node name="errorParsingRtf" value="Rtf analysingsfeil i: %s"/>
@@ -940,17 +940,17 @@
 	</node>
 	<node name="crash">
 		<node name="fixBooksDirectory">
-			<node name="title" value="FBReader problem"/>
-			<node name="text" value="FBReader cache directory is not accessible for writing. May be you forget to insert or unmount your memory card. Please fix this issue or select another directory." toBeTranslated="true"/>
+			<node name="title" value=" problem"/>
+			<node name="text" value=" cache directory is not accessible for writing. May be you forget to insert or unmount your memory card. Please fix this issue or select another directory." toBeTranslated="true"/>
 		</node>
 		<node name="missingNativeLibrary">
-			<node name="title" value="FBReader problem"/>
-			<node name="text" value="FBReader kan ikke laste innebygget bibliotek. Kanskje det ikke ble installert skikkelig. Hvis problemet vedvarer, så prøv å installere FBReader på nytt."/>
+			<node name="title" value=" problem"/>
+			<node name="text" value=" kan ikke laste innebygget bibliotek. Kanskje det ikke ble installert skikkelig. Hvis problemet vedvarer, så prøv å installere  på nytt."/>
 		</node>
 	</node>
 	<node name="error">
 		<node name="bookReading">
-			<node name="title" value="FBReader problem"/>
+			<node name="title" value=" problem"/>
 		</node>
 	</node>
 	<node name="links">

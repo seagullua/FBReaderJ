@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Armenian FBReaderJ resources, by Yavruhrat -->
+<!-- Armenian J resources, by Yavruhrat -->
 <resources>
-	<node name="library" value="FBReader գրադարան">
+	<node name="library" value=" գրադարան">
 		<node name="unknownAuthor" value="Անհայտ հեղինակ"/>
 		<node name="booksWithNoTags" value="Գրքեր առանց գլխաբառերի"/>
 		<node name="demo" value="նմուշ"/>
@@ -35,7 +35,7 @@
 		<node name="fileTreeCard" value="Հիշողության քարտ">
 			<node name="summary" value="Ցուցադրել հիշողության քարտը"/>
 		</node>
-		<node name="fileTreeLibrary" value="FBReader գրադարան">
+		<node name="fileTreeLibrary" value=" գրադարան">
 			<node name="summary" value="Ցուցադրել գրացուցակը"/>
 		</node>
 		<node name="menu">
@@ -52,7 +52,7 @@
 		<node name="markAsRead" value="Նշել որպես ընթերցված"/>
 		<node name="markAsUnread" value="Նշել որպես չընթերցված"/>
 	</node>
-	<node name="networkLibrary" value="FBReader. ցանցային գրադարան">
+	<node name="networkLibrary" value=". ցանցային գրադարան">
 		<node name="byAuthor" value="Ըստ հեղինակի">
 			<node name="summary" value="Գրքեր՝ դասավորված ըստ հեղինակի"/>
 		</node>
@@ -235,7 +235,7 @@
 		<node name="returnTo" value="Վերադառնալ ..."/>
 		<node name="back" value="Հետ"/>
 		<node name="forward" value="Առաջ"/>
-		<node name="close" value="Փակել FBReader-ը"/>
+		<node name="close" value="Փակել -ը"/>
 	</node>
 	<node name="style" value="Ոճ %s"/>
 	<node name="highlightingStyleMenu">
@@ -259,7 +259,7 @@
 		<node name="clearSelection" value="Հեռացնել նշումը"/>
 	</node>
 	<node name="sharing">
-		<node name="sharedFrom" value="Ուղարկվել է &lt;a href=&quot;http://ru.fbreader.org/&quot;&gt;FBReader&lt;/a&gt;"/>
+		<node name="sharedFrom" value="Ուղարկվել է &lt;a href=&quot;http://ru.fbreader.org/&quot;&gt;&lt;/a&gt;"/>
 	</node>
 	<node name="menu">
 		<node name="preferences" value="Կարգավորումներ"/>
@@ -734,12 +734,12 @@
 				<node name="summaryOff" value="Թաքցնել ընթերցված վերջին երեք էջերի ցանկը"/>
 			</node>
 			<node name="backKeyAction" value="Գործողություն «Ետ» ստեղնով">
-				<node name="exit" value="Փակել FBReader-ը"/>
+				<node name="exit" value="Փակել -ը"/>
 				<node name="goBack" value="Գնալ ետ"/>
 				<node name="cancelMenu" value="Ցուցադրել «Ետ» գործիքագոտին"/>
 			</node>
 			<node name="backKeyLongPressAction" value="Գործողություն երկար սեղմումով">
-				<node name="exit" value="Փակել FBReader-ը"/>
+				<node name="exit" value="Փակել -ը"/>
 				<node name="goBack" value="Գնալ ետ"/>
 				<node name="cancelMenu" value="Ցուցադրել «Ետ» գործիքագոտին"/>
 				<node name="none" value="Ոչ մի գործողություն"/>
@@ -752,7 +752,7 @@
 				<node name="summaryOff" value="Թաքցնել"/>
 			</node>
 		</node>
-		<node name="about" value="FBReader-ի մասին">
+		<node name="about" value="-ի մասին">
 			<node name="summary" value="Տարբերակ, կապ"/>
 			<node name="version" value="Տարբերակ"/>
 			<node name="site" value="Մեր կայքը">
@@ -764,7 +764,7 @@
 			<node name="twitter" value="Հետևեք մեզ Թվիթերում">
 				<node name="url" value="http://twitter.com/fbreader_ru"/>
 			</node>
-			<node name="facebook" value="FBReader on facebook" toBeTranslated="true">
+			<node name="facebook" value=" on facebook" toBeTranslated="true">
 				<node name="url" value="https://facebook.com/fbreader"/>
 			</node>
 			<node name="thirdParty" value="Third-party libraries" toBeTranslated="true"/>
@@ -859,7 +859,7 @@
 			<node name="register" value="Գրանցվել"/>
 		</node>
 		<node name="CustomCatalogDialog">
-			<node name="title" value="FBReader. ավելացնել գրացուցակ"/>
+			<node name="title" value=". ավելացնել գրացուցակ"/>
 			<node name="catalogTitle" value="Անվանում"/>
 			<node name="catalogUrl" value="URL"/>
 			<node name="catalogSummary" value="Նկարագրություն"/>
@@ -877,12 +877,12 @@
 		</node>
 		<node name="tips">
 			<node name="title" value="Օրվա խորհուրդը"/>
-			<node name="initializationText" value="Ցանկանո՞ւմ եք օրական մեկ անգամ ստանալ FBReader-ի օգտագործման խորհուրդներ։ Նոր խորհուրդները բեռնվելու են FBReader-ի սպասարկչից։ Շաբաթական բեռնվելու է 1-2 կիլոբայթ .&#10;&#10;։ Միացնե՞լ խորհուրդները։"/>
+			<node name="initializationText" value="Ցանկանո՞ւմ եք օրական մեկ անգամ ստանալ -ի օգտագործման խորհուրդներ։ Նոր խորհուրդները բեռնվելու են -ի սպասարկչից։ Շաբաթական բեռնվելու է 1-2 կիլոբայթ .&#10;&#10;։ Միացնե՞լ խորհուրդները։"/>
 			<node name="dontShowAgain" value="Այլևս չցուցադրել"/>
 			<node name="more" value="Կրկին"/>
 		</node>
 		<node name="screenHint">
-			<node name="message1" value="FBReader works in fullscreen mode by default. Tap center third of the screen to show controls. You can change this behaviour in “Appearance” section of the Settings dialog." toBeTranslated="true"/>
+			<node name="message1" value=" works in fullscreen mode by default. Tap center third of the screen to show controls. You can change this behaviour in “Appearance” section of the Settings dialog." toBeTranslated="true"/>
 			<node name="message2" value="Well done! Now tap the center third again to hide the controls and this hint. If you want to keep controls on the screen during reading, select “Show action bar” option in “Appearance” section of the Settings dialog." toBeTranslated="true"/>
 		</node>
 		<node name="folderList">
@@ -915,7 +915,7 @@
 		<node name="pluginNotFound" value="'%s'-ի համար խրվակ չկա"/>
 		<node name="unknownPluginType" value="%s խրվակի անհայտ տեսակ"/>
 		<node name="fileNotFound" value="%s նիշքը չգտնվեց"/>
-		<node name="unsupportedEncryptionMethod" value="File %s is encrypted with method that is not supported by FBReader. Some pages are not readable" toBeTranslated="true"/>
+		<node name="unsupportedEncryptionMethod" value="File %s is encrypted with method that is not supported by . Some pages are not readable" toBeTranslated="true"/>
 		<node name="opfFileNotFound" value="%s-ում OPF չգտնվեց"/>
 		<node name="unsupportedFileFormat" value="'%s' նիշքերը չեն աջակցվում'"/>
 		<node name="errorParsingRtf" value="Սխալ %s RTF-նիշքը կարդալիս"/>
@@ -945,17 +945,17 @@
 	</node>
 	<node name="crash">
 		<node name="fixBooksDirectory">
-			<node name="title" value="Խնդիր FBReader-ում"/>
-			<node name="text" value="FBReader cache directory is not accessible for writing. May be you forget to insert or unmount your memory card. Please fix this issue or select another directory." toBeTranslated="true"/>
+			<node name="title" value="Խնդիր -ում"/>
+			<node name="text" value=" cache directory is not accessible for writing. May be you forget to insert or unmount your memory card. Please fix this issue or select another directory." toBeTranslated="true"/>
 		</node>
 		<node name="missingNativeLibrary">
-			<node name="title" value="Խնդիր FBReader-ում"/>
-			<node name="text" value="Չի հաջողվում բեռնել գրադարանը. հավանաբար FBReader-ը ճիշտ չի տեղադրվել։ Եթե այս հաղորդագրությունը կրկնվում է ծրագրի ամեն մեկնարկի ժամանակ, փորձեք վերատեղադրել FBReader-ը։"/>
+			<node name="title" value="Խնդիր -ում"/>
+			<node name="text" value="Չի հաջողվում բեռնել գրադարանը. հավանաբար -ը ճիշտ չի տեղադրվել։ Եթե այս հաղորդագրությունը կրկնվում է ծրագրի ամեն մեկնարկի ժամանակ, փորձեք վերատեղադրել -ը։"/>
 		</node>
 	</node>
 	<node name="error">
 		<node name="bookReading">
-			<node name="title" value="Խնդիր FBReader-ում"/>
+			<node name="title" value="Խնդիր -ում"/>
 		</node>
 	</node>
 	<node name="links">

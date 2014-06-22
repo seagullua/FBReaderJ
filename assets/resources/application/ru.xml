@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Russian FBReaderJ resources, by Geometer Plus -->
+<!-- Russian J resources, by Geometer Plus -->
 <resources>
-	<node name="library" value="FBReader: библиотека">
+	<node name="library" value=": библиотека">
 		<node name="unknownAuthor" value="Автор не указан"/>
 		<node name="booksWithNoTags" value="Книги вне категорий"/>
 		<node name="demo" value="фрагмент"/>
@@ -35,7 +35,7 @@
 		<node name="fileTreeCard" value="Карта памяти">
 			<node name="summary" value="Просмотр карты памяти"/>
 		</node>
-		<node name="fileTreeLibrary" value="Библиотека FBReader">
+		<node name="fileTreeLibrary" value="Библиотека ">
 			<node name="summary" value="Просмотр каталога с книгами"/>
 		</node>
 		<node name="menu">
@@ -52,7 +52,7 @@
 		<node name="markAsRead" value="Пометить как прочтённое"/>
 		<node name="markAsUnread" value="Пометить как непрочтённое"/>
 	</node>
-	<node name="networkLibrary" value="FBReader: сетевая библиотека">
+	<node name="networkLibrary" value=": сетевая библиотека">
 		<node name="byAuthor" value="По авторам">
 			<node name="summary" value="Книги, разложенные по авторам"/>
 		</node>
@@ -259,7 +259,7 @@
 		<node name="clearSelection" value="Убрать пометку"/>
 	</node>
 	<node name="sharing">
-		<node name="sharedFrom" value="Отправлено из &lt;a href=&quot;http://ru.fbreader.org/&quot;&gt;FBReader&lt;/a&gt;"/>
+		<node name="sharedFrom" value="Отправлено из &lt;a href=&quot;http://ru.fbreader.org/&quot;&gt;&lt;/a&gt;"/>
 	</node>
 	<node name="menu">
 		<node name="preferences" value="Настройки"/>
@@ -752,7 +752,7 @@
 				<node name="summaryOff" value="Не показывать"/>
 			</node>
 		</node>
-		<node name="about" value="О программе FBReader">
+		<node name="about" value="О программе ">
 			<node name="summary" value="Версия, контакты"/>
 			<node name="version" value="Версия"/>
 			<node name="site" value="Наш веб-сайт">
@@ -764,7 +764,7 @@
 			<node name="twitter" value="Читайте нас в твиттере">
 				<node name="url" value="http://twitter.com/fbreader_ru"/>
 			</node>
-			<node name="facebook" value="Страница FBReader на facebook">
+			<node name="facebook" value="Страница  на facebook">
 				<node name="url" value="https://facebook.com/fbreader"/>
 			</node>
 			<node name="thirdParty" value="Сторонние библиотеки"/>
@@ -859,7 +859,7 @@
 			<node name="register" value="Зарегистрироваться"/>
 		</node>
 		<node name="CustomCatalogDialog">
-			<node name="title" value="FBReader: добавление каталога"/>
+			<node name="title" value=": добавление каталога"/>
 			<node name="catalogTitle" value="Название"/>
 			<node name="catalogUrl" value="URL"/>
 			<node name="catalogSummary" value="Описание"/>
@@ -877,12 +877,12 @@
 		</node>
 		<node name="tips">
 			<node name="title" value="Совет дня"/>
-			<node name="initializationText" value="Хотите ли вы раз в день получать советы по использованию FBReader? Новые советы будут загружаться с сервера FBReader. Это потребует скачивания 1-2 килобайт в неделю.&#10;&#10;Включить советы?"/>
+			<node name="initializationText" value="Хотите ли вы раз в день получать советы по использованию ? Новые советы будут загружаться с сервера . Это потребует скачивания 1-2 килобайт в неделю.&#10;&#10;Включить советы?"/>
 			<node name="dontShowAgain" value="Больше не показывать"/>
 			<node name="more" value="Ещё"/>
 		</node>
 		<node name="screenHint">
-			<node name="message1" value="FBReader запускается в полноэкранном режиме. Чтобы увидеть элементы управления, нажмите на экран в средней трети. Вы можете изменить это поведение в разделе «Внешний вид» диалога настроек." toBeTranslated="true"/>
+			<node name="message1" value=" запускается в полноэкранном режиме. Чтобы увидеть элементы управления, нажмите на экран в средней трети. Вы можете изменить это поведение в разделе «Внешний вид» диалога настроек." toBeTranslated="true"/>
 			<node name="message2" value="Отлично! Нажмите ещё раз на экран в средней трети, чтобы скрыть элементы управления и этот совет. Если вы хотите, чтобы верхнее меню оставалось на экране во время чтения, выберите «Показывать строку меню» в разделе «Внешний вид» диалога настроек." toBeTranslated="true"/>
 		</node>
 		<node name="folderList">
@@ -915,7 +915,7 @@
 		<node name="pluginNotFound" value="Нет плагина для '%s'"/>
 		<node name="unknownPluginType" value="Неизвестный тип плагина: %s"/>
 		<node name="fileNotFound" value="Не найти файл: %s"/>
-		<node name="unsupportedEncryptionMethod" value="Файл %s зашифрован методом, неизвестным FBReader. Некоторые или все страницы могут быть недоступны"/>
+		<node name="unsupportedEncryptionMethod" value="Файл %s зашифрован методом, неизвестным . Некоторые или все страницы могут быть недоступны"/>
 		<node name="opfFileNotFound" value="Не удалось найти OPF в %s"/>
 		<node name="unsupportedFileFormat" value="Не поддерживается формат файла '%s'"/>
 		<node name="errorParsingRtf" value="Ошибка при чтении RTF-файла %s"/>
@@ -945,17 +945,17 @@
 	</node>
 	<node name="crash">
 		<node name="fixBooksDirectory">
-			<node name="title" value="Проблема у FBReader"/>
-			<node name="text" value="FBReader не может сохранить временные файлы. Возможно, вы забыли вставить карту памяти, или она недоступна из-за подключения к компьютеру. Пожалуйста, исправьте эту проблему или выберите другой каталог для временных файлов."/>
+			<node name="title" value="Проблема у "/>
+			<node name="text" value=" не может сохранить временные файлы. Возможно, вы забыли вставить карту памяти, или она недоступна из-за подключения к компьютеру. Пожалуйста, исправьте эту проблему или выберите другой каталог для временных файлов."/>
 		</node>
 		<node name="missingNativeLibrary">
-			<node name="title" value="Проблема у FBReader"/>
-			<node name="text" value="Не удаётся загрузить нативную библиотеку. Возможно, FBReader неправильно установлен. Если это сообщение повторяется при каждой попытке запуска, попробуйте переустановить FBReader."/>
+			<node name="title" value="Проблема у "/>
+			<node name="text" value="Не удаётся загрузить нативную библиотеку. Возможно,  неправильно установлен. Если это сообщение повторяется при каждой попытке запуска, попробуйте переустановить ."/>
 		</node>
 	</node>
 	<node name="error">
 		<node name="bookReading">
-			<node name="title" value="Проблема у FBReader"/>
+			<node name="title" value="Проблема у "/>
 		</node>
 	</node>
 	<node name="links">

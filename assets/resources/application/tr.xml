@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Turkish FBReaderJ resources, by jericho 1200 -->
+<!-- Turkish J resources, by jericho 1200 -->
 <resources>
-	<node name="library" value="FBReader Kitaplığı">
+	<node name="library" value=" Kitaplığı">
 		<node name="unknownAuthor" value="Yazar Bilinmiyor"/>
 		<node name="booksWithNoTags" value="Etiketsiz Kitaplar"/>
 		<node name="demo" value="örnek"/>
@@ -35,8 +35,8 @@
 		<node name="fileTreeCard" value="Hafıza kartı">
 			<node name="summary" value="Hafıza kartı takılı"/>
 		</node>
-		<node name="fileTreeLibrary" value="FBReader Kitaplığı">
-			<node name="summary" value="FBReader kitap dizini"/>
+		<node name="fileTreeLibrary" value=" Kitaplığı">
+			<node name="summary" value=" kitap dizini"/>
 		</node>
 		<node name="menu">
 			<node name="localSearch" value="Ara"/>
@@ -52,7 +52,7 @@
 		<node name="markAsRead" value="Mark as read" toBeTranslated="true"/>
 		<node name="markAsUnread" value="Mark as unread" toBeTranslated="true"/>
 	</node>
-	<node name="networkLibrary" value="FBReader ağ kitaplığı">
+	<node name="networkLibrary" value=" ağ kitaplığı">
 		<node name="byAuthor" value="Yazarlar">
 			<node name="summary" value="Kitaplar yazarlarına göre sıralansın"/>
 		</node>
@@ -230,7 +230,7 @@
 		<node name="returnTo" value="Dön …"/>
 		<node name="back" value="Geri"/>
 		<node name="forward" value="İleri"/>
-		<node name="close" value="FBReader\'i kapat"/>
+		<node name="close" value="\'i kapat"/>
 	</node>
 	<node name="style" value="Style %s" toBeTranslated="true"/>
 	<node name="highlightingStyleMenu">
@@ -254,7 +254,7 @@
 		<node name="clearSelection" value="Sil"/>
 	</node>
 	<node name="sharing">
-		<node name="sharedFrom" value="Shared from &lt;a href=&quot;http://fbreader.org/&quot;&gt;FBReader&lt;/a&gt;" toBeTranslated="true"/>
+		<node name="sharedFrom" value="Shared from &lt;a href=&quot;http://fbreader.org/&quot;&gt;&lt;/a&gt;" toBeTranslated="true"/>
 	</node>
 	<node name="menu">
 		<node name="preferences" value="Ayarlar"/>
@@ -729,12 +729,12 @@
 				<node name="summaryOff" value="Kitapta kalınan yerlerden son üçü seçeneğini gösterme"/>
 			</node>
 			<node name="backKeyAction" value="Geri tuşu eylemi">
-				<node name="exit" value="FBReader Kapansın"/>
+				<node name="exit" value=" Kapansın"/>
 				<node name="goBack" value="Geri dön"/>
 				<node name="cancelMenu" value="Çıkış menüsünü göster"/>
 			</node>
 			<node name="backKeyLongPressAction" value="Geri tuşuna uzun dokunma eylemi">
-				<node name="exit" value="FBReader Kapansın"/>
+				<node name="exit" value=" Kapansın"/>
 				<node name="goBack" value="Geri dön"/>
 				<node name="cancelMenu" value="Çıkış menüsünü göster"/>
 				<node name="none" value="Eylemsiz"/>
@@ -747,7 +747,7 @@
 				<node name="summaryOff" value="Gösterme"/>
 			</node>
 		</node>
-		<node name="about" value="FBReader Hakkında">
+		<node name="about" value=" Hakkında">
 			<node name="summary" value="Version info, contacts"/>
 			<node name="version" value="Version"/>
 			<node name="site" value="Visit our website">
@@ -759,7 +759,7 @@
 			<node name="twitter" value="Follow us at twitter">
 				<node name="url" value="http://twitter.com/fbreader"/>
 			</node>
-			<node name="facebook" value="FBReader on facebook" toBeTranslated="true">
+			<node name="facebook" value=" on facebook" toBeTranslated="true">
 				<node name="url" value="https://facebook.com/fbreader"/>
 			</node>
 			<node name="thirdParty" value="Third-party libraries" toBeTranslated="true"/>
@@ -854,7 +854,7 @@
 			<node name="register" value="Kayıt ol"/>
 		</node>
 		<node name="CustomCatalogDialog">
-			<node name="title" value="FBReader: özedl katalog ekle"/>
+			<node name="title" value=": özedl katalog ekle"/>
 			<node name="catalogTitle" value="Başlık"/>
 			<node name="catalogUrl" value="URL"/>
 			<node name="catalogSummary" value="Özet"/>
@@ -872,12 +872,12 @@
 		</node>
 		<node name="tips">
 			<node name="title" value="Günün ipucu"/>
-			<node name="initializationText" value="FBReader günlük ipuçlarını okumak ister misiniz? Yeni ipuçları FBReader sitesinden indirilebilir. Haftada sadece 1-2 kb lik veri aktarımı harcar.&#10;&#10;İpuçları etkinleşsin mi?"/>
+			<node name="initializationText" value=" günlük ipuçlarını okumak ister misiniz? Yeni ipuçları  sitesinden indirilebilir. Haftada sadece 1-2 kb lik veri aktarımı harcar.&#10;&#10;İpuçları etkinleşsin mi?"/>
 			<node name="dontShowAgain" value="Tekrar sorma"/>
 			<node name="more" value="Sonraki ipucu"/>
 		</node>
 		<node name="screenHint">
-			<node name="message1" value="FBReader works in fullscreen mode by default. Tap center third of the screen to show controls. You can change this behaviour in “Appearance” section of the Settings dialog." toBeTranslated="true"/>
+			<node name="message1" value=" works in fullscreen mode by default. Tap center third of the screen to show controls. You can change this behaviour in “Appearance” section of the Settings dialog." toBeTranslated="true"/>
 			<node name="message2" value="Well done! Now tap the center third again to hide the controls and this hint. If you want to keep controls on the screen during reading, select “Show action bar” option in “Appearance” section of the Settings dialog." toBeTranslated="true"/>
 		</node>
 		<node name="folderList">
@@ -910,7 +910,7 @@
 		<node name="pluginNotFound" value="'%s' eklentisi yok"/>
 		<node name="unknownPluginType" value="Bilinmeyen eklenti tipi: %s"/>
 		<node name="fileNotFound" value="Dosya bulunamadı: %s"/>
-		<node name="unsupportedEncryptionMethod" value="File %s is encrypted with method that is not supported by FBReader. Some pages are not readable" toBeTranslated="true"/>
+		<node name="unsupportedEncryptionMethod" value="File %s is encrypted with method that is not supported by . Some pages are not readable" toBeTranslated="true"/>
 		<node name="opfFileNotFound" value="OPF %s\'de bulunamadı"/>
 		<node name="unsupportedFileFormat" value="'%s' dosya türü desteklenmiyor"/>
 		<node name="errorParsingRtf" value="Rtf parsing error in: %s" toBeTranslated="true"/>
@@ -940,17 +940,17 @@
 	</node>
 	<node name="crash">
 		<node name="fixBooksDirectory">
-			<node name="title" value="FBReader sorunu"/>
-			<node name="text" value="FBReader cache directory is not accessible for writing. May be you forget to insert or unmount your memory card. Please fix this issue or select another directory." toBeTranslated="true"/>
+			<node name="title" value=" sorunu"/>
+			<node name="text" value=" cache directory is not accessible for writing. May be you forget to insert or unmount your memory card. Please fix this issue or select another directory." toBeTranslated="true"/>
 		</node>
 		<node name="missingNativeLibrary">
-			<node name="title" value="FBReader sorunu"/>
-			<node name="text" value="FBReader yerel kitaplığı yükleyemedi. Yükleme sırasında hata oluşmuş olabilir. Sorun devam ederse FBReader\'i yeniden yüklemeyi deneyin."/>
+			<node name="title" value=" sorunu"/>
+			<node name="text" value=" yerel kitaplığı yükleyemedi. Yükleme sırasında hata oluşmuş olabilir. Sorun devam ederse \'i yeniden yüklemeyi deneyin."/>
 		</node>
 	</node>
 	<node name="error">
 		<node name="bookReading">
-			<node name="title" value="FBReader sorunu"/>
+			<node name="title" value=" sorunu"/>
 		</node>
 	</node>
 	<node name="links">
