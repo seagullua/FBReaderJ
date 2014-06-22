@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="FBReaderJ" default="help">
+<project name="Wrapper" default="help">
 	<loadproperties srcFile="local.properties" />
 	<property file="ant.properties" />
 	<loadproperties srcFile="project.properties" />
@@ -20,42 +20,8 @@
 		</fail>
 	</target>
 
-	<target name="native" unless="native.libraries.are.uptodate">
-		<fail message="Native libraries are not up-to-date. Please run ndk-build manually.">
-			<condition>
-				<os family="windows" />
-			</condition>
-		</fail>
-		<echo message="Building native libraries..."/>
-		<exec executable="${ndk.dir}/ndk-build" />
-		<echo message="DONE (Building native libraries)"/>
-	</target>
 
-	<target name="check.native.libraries" depends="init">
-		<echo message="Checking if native libraries are up-to-date..."/>
-		<condition property="native.libraries.are.uptodate" value="true">
-			<and>
-				<!-- Check if libDeflatingDecompressor exists and is up to date -->
-				<available file="./libs/armeabi/libDeflatingDecompressor-v3.so" />
-				<uptodate targetfile="libs/armeabi/libDeflatingDecompressor-v3.so">
-					<srcfiles dir="jni/DeflatingDecompressor" includes="**/*.cpp"/>
-				</uptodate>
-				<!-- Check if libLineBreak exists and is up to date -->
-				<available file="./libs/armeabi/libLineBreak-v2.so" />
-				<uptodate property="libLineBreak-build-is-not-required" targetfile="libs/armeabi/libLineBreak-v2.so">
-					<srcfiles dir="jni/LineBreak" includes="**/*.cpp,**/*.c,**/*.h"/>
-				</uptodate>
-				<!-- Check if libNativeFormats exists and is up to date -->
-				<available file="./libs/armeabi/libNativeFormats-v4.so" />
-				<uptodate property="libNativeFormats-build-is-not-required" targetfile="libs/armeabi/libNativeFormats-v4.so">
-					<srcfiles dir="jni/NativeFormats" includes="**/*.cpp,**/*.c,**/*.h"/>
-				</uptodate>
-			</and>
-		</condition>
-		<echo message="DONE (Checking if native libraries are up-to-date)"/>
-	</target>
-
-	<target name="-pre-build" depends="init, native">
+	<target name="-pre-build" depends="init">
 	</target>
 <!--
 	<target name="-pre-compile">
