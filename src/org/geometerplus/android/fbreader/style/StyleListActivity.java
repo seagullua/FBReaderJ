@@ -28,8 +28,6 @@ import android.os.Bundle;
 import android.widget.*;
 import android.view.*;
 
-import yuku.ambilwarna.widget.AmbilWarnaPrefWidgetView;
-
 import org.geometerplus.zlibrary.core.resources.ZLResource;
 import org.geometerplus.zlibrary.core.util.ZLColor;
 import org.geometerplus.zlibrary.ui.android.R;
@@ -128,8 +126,8 @@ public class StyleListActivity extends ListActivity implements IBookCollection.L
 				: LayoutInflater.from(parent.getContext()).inflate(R.layout.style_item, parent, false);
 			final HighlightingStyle style = getItem(position);
 
-			final AmbilWarnaPrefWidgetView colorView =
-				(AmbilWarnaPrefWidgetView)ViewUtil.findView(view, R.id.style_item_color);
+//			final AmbilWarnaPrefWidgetView colorView =
+//				(AmbilWarnaPrefWidgetView)ViewUtil.findView(view, R.id.style_item_color);
 			final TextView titleView = ViewUtil.findTextView(view, R.id.style_item_title);
 			final Button button = (Button)ViewUtil.findView(view, R.id.style_item_edit_button);
 
@@ -145,14 +143,14 @@ public class StyleListActivity extends ListActivity implements IBookCollection.L
 				final ZLColor color = style.getBackgroundColor();
 				final int rgb = color != null ? ZLAndroidColorUtil.rgb(color) : -1;
 
-				colorView.setVisibility(View.VISIBLE);
-				if (rgb != -1) {
-					colorView.showCross(false);
-					colorView.setBackgroundColor(rgb);
-				} else {
-					colorView.showCross(true);
-					colorView.setBackgroundColor(0);
-				}
+//				colorView.setVisibility(View.VISIBLE);
+//				if (rgb != -1) {
+//					colorView.showCross(false);
+//					colorView.setBackgroundColor(rgb);
+//				} else {
+//					colorView.showCross(true);
+//					colorView.setBackgroundColor(0);
+//				}
 				titleView.setText(name);
 
 				button.setVisibility(View.VISIBLE);
@@ -167,7 +165,7 @@ public class StyleListActivity extends ListActivity implements IBookCollection.L
 					}
 				});
 			} else {
-				colorView.setVisibility(View.GONE);
+				//colorView.setVisibility(View.GONE);
 				button.setVisibility(View.GONE);
 				titleView.setText(
 					resource

@@ -40,7 +40,6 @@ import org.geometerplus.fbreader.Paths;
 import org.geometerplus.fbreader.bookmodel.FBTextKind;
 import org.geometerplus.fbreader.fbreader.*;
 import org.geometerplus.fbreader.fbreader.options.*;
-import org.geometerplus.fbreader.tips.TipsManager;
 
 import org.geometerplus.android.fbreader.DictionaryUtil;
 import org.geometerplus.android.fbreader.FBReader;
@@ -585,8 +584,8 @@ public class PreferenceActivity extends ZLPreferenceActivity {
 			keyBindings.getOption(KeyEvent.KEYCODE_BACK, true), backKeyLongPressActions
 		));
 
-		final Screen tipsScreen = createPreferenceScreen("tips");
-		tipsScreen.addOption(TipsManager.Instance().ShowTipsOption, "showTips");
+//		final Screen tipsScreen = createPreferenceScreen("tips");
+//		tipsScreen.addOption(TipsManager.Instance().ShowTipsOption, "showTips");
 
 		final Screen aboutScreen = createPreferenceScreen("about");
 		aboutScreen.addPreference(new InfoPreference(

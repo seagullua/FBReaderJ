@@ -25,9 +25,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Parcelable;
 
-import group.pals.android.lib.ui.filechooser.FileChooserActivity;
-import group.pals.android.lib.ui.filechooser.services.IFileProvider;
-import group.pals.android.lib.ui.filechooser.io.localfile.LocalFile;
 
 import org.geometerplus.zlibrary.core.resources.ZLResource;
 
@@ -58,23 +55,12 @@ public abstract class FileChooserUtil {
 		String initialValue,
 		boolean chooseWritableDirsOnly
 	) {
-		final Intent intent = new Intent(activity, FileChooserActivity.class);
-		intent.putExtra(FileChooserActivity._TextResources, textResources(title));
-		intent.putExtra(FileChooserActivity._Rootpath, (Parcelable)new LocalFile(initialValue));
-		intent.putExtra(FileChooserActivity._ActionBar, true);
-		intent.putExtra(FileChooserActivity._SaveLastLocation, false);
-		intent.putExtra(FileChooserActivity._DisplayHiddenFiles, true);
-		intent.putExtra(
-			FileChooserActivity._FilterMode,
-			chooseWritableDirsOnly
-				? IFileProvider.FilterMode.DirectoriesOnly
-				: IFileProvider.FilterMode.AnyDirectories
-		);
-		activity.startActivityForResult(intent, requestCode);
+		
+		//activity.startActivityForResult(intent, requestCode);
 	}
 
 	public static String pathFromData(Intent data) {
-		return data.getStringExtra(FileChooserActivity._FolderPath);
+		return "";
 	}
 
 	public static List<String> pathListFromData(Intent data) {

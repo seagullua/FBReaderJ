@@ -24,7 +24,6 @@ import android.preference.Preference;
 import android.view.View;
 import android.widget.TextView;
 
-import yuku.ambilwarna.AmbilWarnaDialog;
 
 import org.geometerplus.zlibrary.core.util.ZLColor;
 
@@ -54,19 +53,6 @@ public abstract class ColorPreference extends Preference {
 
 	@Override
 	protected void onClick() {
-		new AmbilWarnaDialog(getContext(), ZLAndroidColorUtil.rgb(getSavedColor()), new AmbilWarnaDialog.OnAmbilWarnaListener() {
-			@Override
-			public void onOk(AmbilWarnaDialog dialog, int color) {
-				if (!callChangeListener(color)) {
-					return;
-				}
-				saveColor(new ZLColor(color));
-				notifyChanged();
-			}
-
-			@Override
-			public void onCancel(AmbilWarnaDialog dialog) {
-			}
-		}).show();
+		
 	}
 }
