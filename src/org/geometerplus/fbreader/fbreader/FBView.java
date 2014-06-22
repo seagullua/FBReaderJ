@@ -86,23 +86,23 @@ public final class FBView extends ZLTextView {
 			return true;
 		}
 
-		final ZLTextRegion videoRegion = findRegion(x, y, 0, ZLTextRegion.VideoFilter);
-		if (videoRegion != null) {
-			selectRegion(videoRegion);
-			myReader.getViewWidget().reset();
-			myReader.getViewWidget().repaint();
-			myReader.runAction(ActionCode.OPEN_VIDEO, (ZLTextVideoRegionSoul)videoRegion.getSoul());
-			return true;
-		}
+//		final ZLTextRegion videoRegion = findRegion(x, y, 0, ZLTextRegion.VideoFilter);
+//		if (videoRegion != null) {
+//			selectRegion(videoRegion);
+//			myReader.getViewWidget().reset();
+//			myReader.getViewWidget().repaint();
+//			myReader.runAction(ActionCode.OPEN_VIDEO, (ZLTextVideoRegionSoul)videoRegion.getSoul());
+//			return true;
+//		}
 
-		final ZLTextHighlighting highlighting = findHighlighting(x, y, MAX_SELECTION_DISTANCE);
-		if (highlighting instanceof BookmarkHighlighting) {
-			myReader.runAction(
-				ActionCode.SELECTION_BOOKMARK,
-				((BookmarkHighlighting)highlighting).Bookmark
-			);
-			return true;
-		}
+//		final ZLTextHighlighting highlighting = findHighlighting(x, y, MAX_SELECTION_DISTANCE);
+//		if (highlighting instanceof BookmarkHighlighting) {
+//			myReader.runAction(
+//				ActionCode.SELECTION_BOOKMARK,
+//				((BookmarkHighlighting)highlighting).Bookmark
+//			);
+//			return true;
+//		}
 
 		myReader.runAction(getZoneMap().getActionByCoordinates(
 			x, y, getContextWidth(), getContextHeight(),
@@ -230,40 +230,40 @@ public final class FBView extends ZLTextView {
 			return true;
 		}
 
-		final ZLTextRegion region = findRegion(x, y, MAX_SELECTION_DISTANCE, ZLTextRegion.AnyRegionFilter);
-		if (region != null) {
-			final ZLTextRegion.Soul soul = region.getSoul();
-			boolean doSelectRegion = false;
-			if (soul instanceof ZLTextWordRegionSoul) {
-				switch (myReader.MiscOptions.WordTappingAction.getValue()) {
-					case startSelecting:
-						myReader.runAction(ActionCode.SELECTION_HIDE_PANEL);
-						initSelection(x, y);
-						final ZLTextSelectionCursor cursor = findSelectionCursor(x, y);
-						if (cursor != ZLTextSelectionCursor.None) {
-							moveSelectionCursorTo(cursor, x, y);
-						}
-						return true;
-					case selectSingleWord:
-					case openDictionary:
-						doSelectRegion = true;
-						break;
-				}
-			} else if (soul instanceof ZLTextImageRegionSoul) {
-				doSelectRegion =
-					myReader.ImageOptions.TapAction.getValue() !=
-					ImageOptions.TapActionEnum.doNothing;
-			} else if (soul instanceof ZLTextHyperlinkRegionSoul) {
-				doSelectRegion = true;
-			}
-
-			if (doSelectRegion) {
-				selectRegion(region);
-				myReader.getViewWidget().reset();
-				myReader.getViewWidget().repaint();
-				return true;
-			}
-		}
+//		final ZLTextRegion region = findRegion(x, y, MAX_SELECTION_DISTANCE, ZLTextRegion.AnyRegionFilter);
+//		if (region != null) {
+//			final ZLTextRegion.Soul soul = region.getSoul();
+//			boolean doSelectRegion = false;
+//			if (soul instanceof ZLTextWordRegionSoul) {
+//				switch (myReader.MiscOptions.WordTappingAction.getValue()) {
+//					case startSelecting:
+//						myReader.runAction(ActionCode.SELECTION_HIDE_PANEL);
+//						initSelection(x, y);
+//						final ZLTextSelectionCursor cursor = findSelectionCursor(x, y);
+//						if (cursor != ZLTextSelectionCursor.None) {
+//							moveSelectionCursorTo(cursor, x, y);
+//						}
+//						return true;
+//					case selectSingleWord:
+//					case openDictionary:
+//						doSelectRegion = true;
+//						break;
+//				}
+//			} else if (soul instanceof ZLTextImageRegionSoul) {
+//				doSelectRegion =
+//					myReader.ImageOptions.TapAction.getValue() !=
+//					ImageOptions.TapActionEnum.doNothing;
+//			} else if (soul instanceof ZLTextHyperlinkRegionSoul) {
+//				doSelectRegion = true;
+//			}
+//
+//			if (doSelectRegion) {
+//				selectRegion(region);
+//				myReader.getViewWidget().reset();
+//				myReader.getViewWidget().repaint();
+//				return true;
+//			}
+//		}
 
 		return false;
 	}

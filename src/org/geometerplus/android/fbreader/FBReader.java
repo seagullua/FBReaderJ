@@ -55,7 +55,6 @@ import org.geometerplus.fbreader.fbreader.*;
 import org.geometerplus.fbreader.fbreader.options.CancelMenuHelper;
 
 import org.geometerplus.android.fbreader.api.*;
-import org.geometerplus.android.fbreader.httpd.DataService;
 import org.geometerplus.android.fbreader.library.BookInfoActivity;
 import org.geometerplus.android.fbreader.libraryService.BookCollectionShadow;
 
@@ -92,7 +91,6 @@ public final class FBReader extends Activity implements ZLApplicationWindow {
 	private volatile boolean myShowStatusBarFlag;
 	private String myMenuLanguage;
 
-	final DataService.Connection DataConnection = new DataService.Connection();
 
 	private static final String PLUGIN_ACTION_PREFIX = "___";
 	private final List<PluginApi.ActionInfo> myPluginActions =
@@ -191,11 +189,6 @@ public final class FBReader extends Activity implements ZLApplicationWindow {
 		super.onCreate(icicle);
 		Thread.setDefaultUncaughtExceptionHandler(new UncaughtExceptionHandler(this));
 
-		bindService(
-			new Intent(this, DataService.class),
-			DataConnection,
-			DataService.BIND_AUTO_CREATE
-		);
 
 		final Config config = Config.Instance();
 		config.runOnConnect(new Runnable() {
@@ -265,7 +258,7 @@ public final class FBReader extends Activity implements ZLApplicationWindow {
 		myFBReaderApp.addAction(ActionCode.SELECTION_BOOKMARK, new SelectionBookmarkAction(this, myFBReaderApp));
 
 		myFBReaderApp.addAction(ActionCode.PROCESS_HYPERLINK, new ProcessHyperlinkAction(this, myFBReaderApp));
-		myFBReaderApp.addAction(ActionCode.OPEN_VIDEO, new OpenVideoAction(this, myFBReaderApp));
+		//myFBReaderApp.addAction(ActionCode.OPEN_VIDEO, new OpenVideoAction(this, myFBReaderApp));
 
 		myFBReaderApp.addAction(ActionCode.SHOW_CANCEL_MENU, new ShowCancelMenuAction(this, myFBReaderApp));
 
@@ -478,7 +471,6 @@ public final class FBReader extends Activity implements ZLApplicationWindow {
 	@Override
 	protected void onDestroy() {
 		getCollection().unbind();
-		unbindService(DataConnection);
 		super.onDestroy();
 	}
 
