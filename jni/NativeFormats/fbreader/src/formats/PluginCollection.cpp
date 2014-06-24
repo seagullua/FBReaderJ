@@ -27,25 +27,25 @@
 
 #include "../library/Book.h"
 
-#include "fb2/FB2Plugin.h"
-#include "html/HtmlPlugin.h"
-#include "txt/TxtPlugin.h"
+//#include "fb2/FB2Plugin.h"
+//#include "html/HtmlPlugin.h"
+//#include "txt/TxtPlugin.h"
 //#include "pdb/PdbPlugin.h"
 //#include "tcr/TcrPlugin.h"
 #include "oeb/OEBPlugin.h"
 //#include "chm/CHMPlugin.h"
-#include "rtf/RtfPlugin.h"
+//#include "rtf/RtfPlugin.h"
 //#include "openreader/OpenReaderPlugin.h"
-#include "doc/DocPlugin.h"
+//#include "doc/DocPlugin.h"
 
 PluginCollection *PluginCollection::ourInstance = 0;
 
 PluginCollection &PluginCollection::Instance() {
 	if (ourInstance == 0) {
 		ourInstance = new PluginCollection();
-		ourInstance->myPlugins.push_back(new FB2Plugin());
-		ourInstance->myPlugins.push_back(new HtmlPlugin());
-		ourInstance->myPlugins.push_back(new TxtPlugin());
+//		ourInstance->myPlugins.push_back(new FB2Plugin());
+//		ourInstance->myPlugins.push_back(new HtmlPlugin());
+//		ourInstance->myPlugins.push_back(new TxtPlugin());
 //		ourInstance->myPlugins.push_back(new PluckerPlugin());
 //		ourInstance->myPlugins.push_back(new PalmDocPlugin());
 //		ourInstance->myPlugins.push_back(new MobipocketPlugin());
@@ -54,8 +54,8 @@ PluginCollection &PluginCollection::Instance() {
 //		ourInstance->myPlugins.push_back(new TcrPlugin());
 //		ourInstance->myPlugins.push_back(new CHMPlugin());
 		ourInstance->myPlugins.push_back(new OEBPlugin());
-		ourInstance->myPlugins.push_back(new RtfPlugin());
-		ourInstance->myPlugins.push_back(new DocPlugin());
+//		ourInstance->myPlugins.push_back(new RtfPlugin());
+//		ourInstance->myPlugins.push_back(new DocPlugin());
 //		ourInstance->myPlugins.push_back(new OpenReaderPlugin());
 	}
 	return *ourInstance;
