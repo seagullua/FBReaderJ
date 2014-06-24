@@ -22,10 +22,12 @@ package org.geometerplus.fbreader;
 import java.io.*;
 import java.util.*;
 
+import android.content.Context;
 import android.os.Environment;
 
 import org.geometerplus.zlibrary.core.options.ZLStringOption;
 import org.geometerplus.zlibrary.core.options.ZLStringListOption;
+import org.geometerplus.zlibrary.ui.android.library.ZLAndroidApplication;
 
 public abstract class Paths {
 	public static ZLStringListOption BookPathOption =
@@ -120,7 +122,9 @@ public abstract class Paths {
 	}
 
 	public static String tempDirectory() {
-		return TempDirectoryOption.getValue();
+		Context context = ZLAndroidApplication.context;
+		String res = context.getFilesDir().getPath();
+		return res+"/temp";
 	}
 
 	public static String networkCacheDirectory() {
