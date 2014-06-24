@@ -92,8 +92,6 @@ public final class FBReader extends Activity implements ZLApplicationWindow {
 
 
 	private static final String PLUGIN_ACTION_PREFIX = "___";
-	private final List<PluginApi.ActionInfo> myPluginActions =
-		new LinkedList<PluginApi.ActionInfo>();
 	
 
 	private synchronized void openBook(Intent intent, final Runnable action, boolean force) {
@@ -546,18 +544,6 @@ public final class FBReader extends Activity implements ZLApplicationWindow {
 
 		menu.clear();
 		fillMenu(menu, MenuData.topLevelNodes());
-		synchronized (myPluginActions) {
-			int index = 0;
-			for (PluginApi.ActionInfo info : myPluginActions) {
-				if (info instanceof PluginApi.MenuActionInfo) {
-					addMenuItem(
-						menu,
-						PLUGIN_ACTION_PREFIX + index++,
-						((PluginApi.MenuActionInfo)info).MenuItemName
-					);
-				}
-			}
-		}
 
 		refresh();
 	}
