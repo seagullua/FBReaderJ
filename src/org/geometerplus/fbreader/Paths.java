@@ -123,8 +123,15 @@ public abstract class Paths {
 
 	public static String tempDirectory() {
 		Context context = ZLAndroidApplication.context;
-		String res = context.getFilesDir().getPath();
-		return res+"/temp";
+		String res = context.getFilesDir().getPath() + "/temp";
+		File folder = new File(res);
+		if (!folder.exists()) {
+		    if(!folder.mkdir())
+		    {
+		    	res = context.getFilesDir().getPath();
+		    }
+		}
+		return res;
 	}
 
 	public static String networkCacheDirectory() {
