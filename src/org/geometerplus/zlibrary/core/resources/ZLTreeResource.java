@@ -153,7 +153,10 @@ final class ZLTreeResource extends ZLResource {
 		}
 		if ((language != null && !language.equals(ourLanguage)) ||
 			(country != null && !country.equals(ourCountry))) {
-			ourLanguage = language;
+			if(language.equals("uk") || language.equals("ru") || language.equals("be"))
+			{
+				ourLanguage = language;
+			}
 			ourCountry = country;
 			loadData();
 		}
