@@ -33,7 +33,7 @@ public abstract class HtmlUtil {
 			final int start = newHtmlText.getSpanStart(span);
 			final int end = newHtmlText.getSpanEnd(span);
 			final int flags = newHtmlText.getSpanFlags(span);
-			final String url = NetworkLibrary.Instance().rewriteUrl(span.getURL(), true);
+			final String url = span.getURL();
 			newHtmlText.removeSpan(span);
 			newHtmlText.setSpan(new URLSpan(url), start, end, flags);
 		}

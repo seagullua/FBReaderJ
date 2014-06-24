@@ -23,10 +23,8 @@ import java.util.*;
 
 import org.geometerplus.zlibrary.core.network.ZLNetworkRequest;
 
-import org.geometerplus.fbreader.network.authentication.NetworkAuthenticationManager;
 import org.geometerplus.fbreader.network.urlInfo.UrlInfo;
 import org.geometerplus.fbreader.network.urlInfo.UrlInfoWithDate;
-import org.geometerplus.fbreader.network.tree.NetworkItemsLoader;
 
 public interface INetworkLink extends Comparable<INetworkLink> {
 	public enum Type {
@@ -90,15 +88,15 @@ public interface INetworkLink extends Comparable<INetworkLink> {
 	 * @param listener Network operation listener
 	 * @return instance, which represents the state of the network operation.
 	 */
-	NetworkOperationData createOperationData(NetworkItemsLoader loader);
+	//NetworkOperationData createOperationData(NetworkItemsLoader loader);
 
-	BasketItem getBasketItem();
+	//BasketItem getBasketItem();
 
-	ZLNetworkRequest simpleSearchRequest(String pattern, NetworkOperationData data);
-	ZLNetworkRequest resume(NetworkOperationData data);
+	//ZLNetworkRequest simpleSearchRequest(String pattern, NetworkOperationData data);
+	//ZLNetworkRequest resume(NetworkOperationData data);
 
-	NetworkCatalogItem libraryItem();
-	NetworkAuthenticationManager authenticationManager();
+	//NetworkCatalogItem libraryItem();
+	//NetworkAuthenticationManager authenticationManager();
 
 	String rewriteUrl(String url, boolean isUrlExternal);
 }

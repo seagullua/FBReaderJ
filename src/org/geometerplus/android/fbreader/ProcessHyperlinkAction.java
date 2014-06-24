@@ -27,7 +27,6 @@ import org.geometerplus.zlibrary.text.view.*;
 
 import org.geometerplus.fbreader.fbreader.FBReaderApp;
 import org.geometerplus.fbreader.bookmodel.FBHyperlinkType;
-import org.geometerplus.fbreader.network.NetworkLibrary;
 
 import org.geometerplus.android.fbreader.image.ImageViewActivity;
 
@@ -90,13 +89,11 @@ class ProcessHyperlinkAction extends FBAndroidAction {
 		final boolean externalUrl;
 		
 		externalUrl = true;
-		final NetworkLibrary nLibrary = NetworkLibrary.Instance();
+		//final NetworkLibrary nLibrary = NetworkLibrary.Instance();
 		new Thread(new Runnable() {
 			public void run() {
-				if (!url.startsWith("fbreader-action:")) {
-					nLibrary.initialize();
-				}
-				intent.setData(Uri.parse(nLibrary.rewriteUrl(url, externalUrl)));
+				
+				intent.setData(Uri.parse(url));
 				BaseActivity.runOnUiThread(new Runnable() {
 					public void run() {
 						try {

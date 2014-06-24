@@ -25,7 +25,6 @@ import org.geometerplus.zlibrary.core.language.Language;
 import org.geometerplus.zlibrary.core.network.ZLNetworkRequest;
 
 import org.geometerplus.fbreader.network.urlInfo.*;
-import org.geometerplus.fbreader.network.tree.NetworkItemsLoader;
 
 public abstract class AbstractNetworkLink implements INetworkLink {
 	private int myId;
@@ -99,17 +98,7 @@ public abstract class AbstractNetworkLink implements INetworkLink {
 		return set;
 	}
 
-	public BasketItem getBasketItem() {
-		return null;
-	}
-
-	public ZLNetworkRequest bookListRequest(List<String> bookIds, NetworkOperationData data) {
-		return null;
-	}
-
-	public NetworkOperationData createOperationData(NetworkItemsLoader listener) {
-		return new NetworkOperationData(this, listener);
-	}
+	
 
 	@Override
 	public String toString() {
