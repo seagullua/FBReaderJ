@@ -28,7 +28,7 @@ import org.geometerplus.fbreader.Paths;
 
 public abstract class WallpapersUtil {
 	public static List<ZLFile> predefinedWallpaperFiles() {
-		return ZLFile.createFileByPath("wallpapers").children();
+		return new ArrayList<ZLFile>();
 	}
 
 	public static List<ZLFile> externalWallpaperFiles() {

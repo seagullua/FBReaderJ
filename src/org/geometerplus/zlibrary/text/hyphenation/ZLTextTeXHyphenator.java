@@ -47,7 +47,7 @@ final class ZLTextTeXHyphenator extends ZLTextHyphenator {
 				}
 			}
 
-			codes.add("zh");
+			//codes.add("zh");
 			myLanguageCodes = new ArrayList<String>(codes);
 		}
 
