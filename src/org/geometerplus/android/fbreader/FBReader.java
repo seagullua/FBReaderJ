@@ -31,6 +31,7 @@ import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.PowerManager;
+import android.util.Log;
 import android.view.*;
 import android.widget.RelativeLayout;
 
@@ -58,6 +59,8 @@ import org.geometerplus.android.fbreader.api.*;
 import org.geometerplus.android.fbreader.libraryService.BookCollectionShadow;
 
 import org.geometerplus.android.util.*;
+
+import com.flurry.android.FlurryAgent;
 
 public final class FBReader extends Activity implements ZLApplicationWindow {
 	static final int ACTION_BAR_COLOR = Color.DKGRAY;
@@ -149,7 +152,12 @@ public final class FBReader extends Activity implements ZLApplicationWindow {
 	protected void onCreate(Bundle icicle) {
 		super.onCreate(icicle);
 		Thread.setDefaultUncaughtExceptionHandler(new UncaughtExceptionHandler(this));
-
+		
+		FlurryAgent.onStartSession(this, "72B9RPD7B6W64V37D343");
+		
+		Map<String,String> params = new HashMap<String, String>();
+		params.put("id", this.getApplicationContext().getPackageName());
+		FlurryAgent.logEvent("book", params);
 
 		final Config config = Config.Instance();
 		config.runOnConnect(new Runnable() {
@@ -380,6 +388,7 @@ public final class FBReader extends Activity implements ZLApplicationWindow {
 
 	@Override
 	protected void onStop() {
+		FlurryAgent.onEndSession(this);
 		ApiServerImplementation.sendEvent(this, ApiListener.EVENT_READ_MODE_CLOSED);
 		PopupPanel.removeAllWindows(myFBReaderApp, this);
 		super.onStop();
