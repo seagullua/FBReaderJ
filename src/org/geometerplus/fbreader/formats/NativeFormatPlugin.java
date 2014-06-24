@@ -32,14 +32,11 @@ import org.geometerplus.fbreader.book.Book;
 import org.geometerplus.fbreader.book.BookUtil;
 import org.geometerplus.fbreader.bookmodel.BookModel;
 import org.geometerplus.fbreader.bookmodel.BookReadingException;
-import org.geometerplus.fbreader.formats.fb2.FB2NativePlugin;
 import org.geometerplus.fbreader.formats.oeb.OEBNativePlugin;
 
 public class NativeFormatPlugin extends FormatPlugin {
 	public static NativeFormatPlugin create(String fileType) {
-		if ("fb2".equals(fileType)) {
-			return new FB2NativePlugin();
-		} else if ("ePub".equals(fileType)) {
+		if ("ePub".equals(fileType)) {
 			return new OEBNativePlugin();
 		} else {
 			return new NativeFormatPlugin(fileType);
