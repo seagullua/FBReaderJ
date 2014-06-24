@@ -24,9 +24,7 @@ import java.util.*;
 import org.geometerplus.zlibrary.core.filesystem.ZLFile;
 import org.geometerplus.zlibrary.core.filetypes.*;
 
-import org.geometerplus.fbreader.formats.fb2.FB2Plugin;
 import org.geometerplus.fbreader.formats.oeb.OEBPlugin;
-import org.geometerplus.fbreader.formats.pdb.MobipocketPlugin;
 
 public class PluginCollection {
 	static {
@@ -58,8 +56,6 @@ public class PluginCollection {
 	}
 
 	private PluginCollection() {
-		addPlugin(new FB2Plugin());
-		addPlugin(new MobipocketPlugin());
 		addPlugin(new OEBPlugin());
 	}
 

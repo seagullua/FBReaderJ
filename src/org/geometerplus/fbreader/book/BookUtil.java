@@ -87,7 +87,8 @@ public abstract class BookUtil {
 		String asset_name = "data/book.epub";
 		if(context != null) 
 		{
-			String data_path = "/data/data/" + context.getApplicationContext().getPackageName(); 
+			String data_path = context.getFilesDir().getPath(); 
+			
 			String full_path = data_path+"/book.epub";
 			File file = new File(full_path);
 		    if(!file.exists())
