@@ -227,15 +227,15 @@ public final class FBReader extends Activity implements ZLApplicationWindow {
 			myShowStatusBarFlag ? 0 : WindowManager.LayoutParams.FLAG_FULLSCREEN
 		);
 
-		if (myFBReaderApp.getPopupById(TextSearchPopup.ID) == null) {
-			new TextSearchPopup(myFBReaderApp);
-		}
+//		if (myFBReaderApp.getPopupById(TextSearchPopup.ID) == null) {
+//			new TextSearchPopup(myFBReaderApp);
+//		}
 		if (myFBReaderApp.getPopupById(NavigationPopup.ID) == null) {
 			new NavigationPopup(myFBReaderApp);
 		}
-		if (myFBReaderApp.getPopupById(SelectionPopup.ID) == null) {
-			new SelectionPopup(myFBReaderApp);
-		}
+//		if (myFBReaderApp.getPopupById(SelectionPopup.ID) == null) {
+//			new SelectionPopup(myFBReaderApp);
+//		}
 
 		//myFBReaderApp.addAction(ActionCode.SHOW_LIBRARY, new ShowLibraryAction(this, myFBReaderApp));
 		//myFBReaderApp.addAction(ActionCode.SHOW_PREFERENCES, new ShowPreferencesAction(this, myFBReaderApp));
@@ -314,30 +314,6 @@ public final class FBReader extends Activity implements ZLApplicationWindow {
 			});
 		} else if (FBReaderIntents.Action.PLUGIN.equals(action)) {
 			new RunPluginAction(this, myFBReaderApp, data).run();
-		} else if (Intent.ACTION_SEARCH.equals(action)) {
-			final String pattern = intent.getStringExtra(SearchManager.QUERY);
-			final Runnable runnable = new Runnable() {
-				public void run() {
-					final TextSearchPopup popup = (TextSearchPopup)myFBReaderApp.getPopupById(TextSearchPopup.ID);
-					popup.initPosition();
-					myFBReaderApp.MiscOptions.TextSearchPattern.setValue(pattern);
-					if (myFBReaderApp.getTextView().search(pattern, true, false, false, false) != 0) {
-						runOnUiThread(new Runnable() {
-							public void run() {
-								myFBReaderApp.showPopup(popup.getId());
-							}
-						});
-					} else {
-						runOnUiThread(new Runnable() {
-							public void run() {
-								UIUtil.showErrorMessage(FBReader.this, "textNotFound");
-								popup.StartPosition = null;
-							}
-						});
-					}
-				}
-			};
-			UIUtil.wait("search", runnable, this);
 		} else {
 			super.onNewIntent(intent);
 		}
@@ -377,9 +353,9 @@ public final class FBReader extends Activity implements ZLApplicationWindow {
 			}
 		});
 
-		((PopupPanel)myFBReaderApp.getPopupById(TextSearchPopup.ID)).setPanelInfo(this, myRootView);
+		//((PopupPanel)myFBReaderApp.getPopupById(TextSearchPopup.ID)).setPanelInfo(this, myRootView);
 		((PopupPanel)myFBReaderApp.getPopupById(NavigationPopup.ID)).setPanelInfo(this, myRootView);
-		((PopupPanel)myFBReaderApp.getPopupById(SelectionPopup.ID)).setPanelInfo(this, myRootView);
+		//((PopupPanel)myFBReaderApp.getPopupById(SelectionPopup.ID)).setPanelInfo(this, myRootView);
 	}
 
 	@Override
@@ -513,17 +489,17 @@ public final class FBReader extends Activity implements ZLApplicationWindow {
 	}
 
 	public void showSelectionPanel() {
-		final ZLTextView view = myFBReaderApp.getTextView();
-		((SelectionPopup)myFBReaderApp.getPopupById(SelectionPopup.ID))
-			.move(view.getSelectionStartY(), view.getSelectionEndY());
-		myFBReaderApp.showPopup(SelectionPopup.ID);
+//		final ZLTextView view = myFBReaderApp.getTextView();
+//		((SelectionPopup)myFBReaderApp.getPopupById(SelectionPopup.ID))
+//			.move(view.getSelectionStartY(), view.getSelectionEndY());
+//		myFBReaderApp.showPopup(SelectionPopup.ID);
 	}
 
 	public void hideSelectionPanel() {
-		final FBReaderApp.PopupPanel popup = myFBReaderApp.getActivePopup();
-		if (popup != null && popup.getId() == SelectionPopup.ID) {
-			myFBReaderApp.hideActivePopup();
-		}
+//		final FBReaderApp.PopupPanel popup = myFBReaderApp.getActivePopup();
+//		if (popup != null && popup.getId() == SelectionPopup.ID) {
+//			myFBReaderApp.hideActivePopup();
+//		}
 	}
 
 	private void onPreferencesUpdate(Book book) {
