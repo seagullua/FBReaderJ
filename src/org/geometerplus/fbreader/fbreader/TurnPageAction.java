@@ -18,7 +18,7 @@
  */
 
 package org.geometerplus.fbreader.fbreader;
-
+import org.ads.Ads;
 import org.geometerplus.fbreader.fbreader.options.PageTurningOptions;
 
 class TurnPageAction extends FBAction {
@@ -40,6 +40,7 @@ class TurnPageAction extends FBAction {
 
 	@Override
 	protected void run(Object ... params) {
+		Ads.showHere();
 		final PageTurningOptions preferences = Reader.PageTurningOptions;
 		if (params.length == 2 && params[0] instanceof Integer && params[1] instanceof Integer) {
 			final int x = (Integer)params[0];

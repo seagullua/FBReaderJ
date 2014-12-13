@@ -61,6 +61,7 @@ import org.geometerplus.android.fbreader.libraryService.BookCollectionShadow;
 import org.geometerplus.android.util.*;
 
 import com.flurry.android.FlurryAgent;
+import org.ads.Ads;
 
 public final class FBReader extends Activity implements ZLApplicationWindow {
 	static final int ACTION_BAR_COLOR = Color.DKGRAY;
@@ -153,8 +154,8 @@ public final class FBReader extends Activity implements ZLApplicationWindow {
 		super.onCreate(icicle);
 		Thread.setDefaultUncaughtExceptionHandler(new UncaughtExceptionHandler(this));
 		
-		FlurryAgent.onStartSession(this, "72B9RPD7B6W64V37D343");
-		
+		FlurryAgent.onStartSession(this, "JCRNFP8FBZV6QMSDPSGM");
+		Ads.init(this);
 		Map<String,String> params = new HashMap<String, String>();
 		params.put("id", this.getApplicationContext().getPackageName());
 		FlurryAgent.logEvent("book", params);

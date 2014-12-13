@@ -18,7 +18,7 @@
  */
 
 package org.geometerplus.fbreader.fbreader;
-
+import org.ads.Ads;
 import org.geometerplus.fbreader.fbreader.options.PageTurningOptions;
 
 class VolumeKeyTurnPageAction extends FBAction {
@@ -32,6 +32,7 @@ class VolumeKeyTurnPageAction extends FBAction {
 	@Override
 	protected void run(Object ... params) {
 		final PageTurningOptions preferences = Reader.PageTurningOptions;
+		Ads.showHere();
 		Reader.getViewWidget().startAnimatedScrolling(
 			myForward ? FBView.PageIndex.next : FBView.PageIndex.previous,
 			preferences.Horizontal.getValue()
